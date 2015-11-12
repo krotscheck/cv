@@ -1,0 +1,55 @@
+<div class="intro {{root.displayState}}">
+  <h2>{{root.name}}</h2>
+
+  <div tag-search="root.validTags"
+       ng-model="root.searchTags"
+       ng-change="root.invalidate()"
+       placeholder="'This is my Resumé. What are you looking for?'">
+  </div>
+  <button class="feeling-lucky display-screen"
+          ng-click="root.everything()">Show me everything
+  </button>
+
+
+  <div class="contact-icons display-screen">
+    <a ng-repeat="(key, value) in root.contact"
+       class="icon {{key}}"
+       href="{{value | contactLink:{type:key} }}"
+       target="_blank">
+      <i class="fa fa-{{key}}"></i>
+    </a>
+  </div>
+  <ul class="contact-text display-print">
+    <li ng-repeat="(key, value) in root.contact">
+      {{value}}
+    </li>
+  </ul>
+</div>
+
+<div class="content-box {{root.displayState}}">
+  <div>
+    <div class="container about"
+         ng-controller="AboutController as about"
+         ng-init="about.render(null, root.annotatedSearchTags)">
+      <div class="row" ng-if="about.text">
+        <h3 class="two columns">About</h3>
+        <div class="ten columns">{{about.text}}</div>
+      </div>
+    </div>
+
+    <div class="container events"
+         ng-controller="EventController as eventCtrl"
+         ng-init="eventCtrl.render(null, root.annotatedSearchTags)">
+      <div class="row" ng-repeat="event in eventCtrl.events">
+        <h3 class="two columns" ng-if="$index == 0">Timeline</h3>
+        <div class="two columns" ng-if="$index > 0">&nbsp;</div>
+        <div class="ten columns event event-{{event.type}}"
+             ng-include="'view/timeline/' + event.type + '.html'">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer display-print">
+  Customise this Resumé at https://krotscheck.github.io/cv/
+</div>

@@ -1,0 +1,5 @@
+<h4>Project: {{event.title}} <small>{{event.date.end | date: 'MMMM d, yyyy': 'GMT'}}</small></h4>
+<div class="tags">
+  <span class="tag" ng-repeat="tag in event.tags">{{tag}}</span>
+</div>
+<p>{{event.description}}</p>

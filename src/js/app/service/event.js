@@ -24,7 +24,11 @@ angular.module('resume').service('Event',
                 event.date.begin = new Date(event.date.begin);
               }
               if (event.date.hasOwnProperty('end')) {
-                event.date.end = new Date(event.date.end);
+                if (event.date.end === 'current') {
+                  event.date.end = new Date();
+                } else {
+                  event.date.end = new Date(event.date.end);
+                }
               }
             }
           }
@@ -38,7 +42,7 @@ angular.module('resume').service('Event',
     }
 
     return {
-      query: function(type) {
+      query: function(types) {
         var deferred = $q.defer();
         var events = [];
         events.$promise = deferred.promise;
@@ -57,8 +61,8 @@ angular.module('resume').service('Event',
           // Postprocessing filters.
           results = results.filter(function(element) {
             var typeMatches = true;
-            if (type) {
-              typeMatches = element.type === type;
+            if (types) {
+              typeMatches = types.indexOf(element.type) > -1;
             }
 
             var tagsMatch = true;
@@ -69,7 +73,7 @@ angular.module('resume').service('Event',
           results.sort(function(a, b) {
             var aDate = a.date.end || a.date;
             var bDate = b.date.end || b.date;
-            if (aDate == bDate) {
+            if (aDate === bDate) {
               return 0;
             }
             return aDate > bDate ? -1 : 1;

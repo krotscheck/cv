@@ -1,15 +1,15 @@
-angular.module('resume').service('Header',
+angular.module('resume').service('User',
   function ($http, $q) {
     'use strict';
 
     var deferred;
 
-    function getHeader () {
+    function getUser () {
       if (!deferred) {
         deferred = $q.defer();
         $http({
           method: 'GET',
-          url: './data/header.json'
+          url: './data/user.json'
         }).then(function (response) {
           // Extract the data.
           deferred.resolve(response.data);
@@ -22,17 +22,17 @@ angular.module('resume').service('Header',
 
     return {
       get: function () {
-        var header = {};
-        header.$promise = getHeader();
-        header.$resolved = false;
-        header.$promise.then(function (result) {
-          angular.copy(result, header);
-          header.$resolved = true;
+        var user = {};
+        user.$promise = getUser();
+        user.$resolved = false;
+        user.$promise.then(function (result) {
+          angular.copy(result, user);
+          user.$resolved = true;
         }, function () {
-          header.$resolved = true;
+          user.$resolved = true;
         });
 
-        return header;
+        return user;
       }
     };
   });

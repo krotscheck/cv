@@ -1,10 +1,10 @@
 angular.module('resume').controller('AboutController',
-  function($scope, Header) {
+  function($scope, User) {
     'use strict';
 
     var ctrl = this;
 
-    var headerPromise = Header.get().$promise;
+    var userPromise = User.get().$promise;
 
     /**
      * Choose the most appropriate about text from the provided map.
@@ -16,7 +16,7 @@ angular.module('resume').controller('AboutController',
     ctrl.render = function(evt, searchParams) {
       var showEverything = searchParams.indexOf('Everything') > -1;
 
-      headerPromise.then(function(header) {
+      userPromise.then(function(header) {
         // If the search params are empty, update nothing.
         if (searchParams.length === 0) {
           return;

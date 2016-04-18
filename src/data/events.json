@@ -1,5 +1,28 @@
 [
   {
+    "type": "project",
+    "title": "NPM Mirror",
+    "description": "A full mirror of the NPM repository, on top of OpenStack's AFS mirrors.",
+    "date": {
+      "begin": "2016-04-10",
+      "end": "current"
+    },
+    "location": {
+      "city": "Seattle",
+      "region": "WA",
+      "country": "USA"
+    },
+    "tags": [
+      "bash",
+      "AFS",
+      "Puppet",
+      "JavaScript",
+      "npm",
+      "OpenStack"
+    ],
+    "employer": "Hewlett Packard"
+  },
+  {
     "title": "Master of Business Administration, Business Strategy",
     "type": "education",
     "institution": "University of Pittsburgh",
@@ -41,256 +64,21 @@
     ]
   },
   {
-    "type": "employer_acquired",
-    "title": "Sr. E-Learning Developer",
-    "employer": [
-      "TechRx",
-      "NDCHealth"
-    ],
+    "type": "project",
+    "title": "Camps Administrative User Interface",
+    "description": "An administrative user interface for Active.com's SummerCamp registration program.",
     "date": {
-      "begin": "2003-05-28",
-      "end": "2003-05-28"
+      "begin": "2010-10-14",
+      "end": "2011-09-30"
     },
     "tags": [
       "ActionScript",
+      "Flex",
       "JavaScript",
-      "PHP",
-      "RoboDoc"
-    ]
-  },
-  {
-    "type": "promotion",
-    "title": "Development Team Lead, Camps",
-    "employer": "The Active Network",
-    "date": {
-      "begin": "2010-03-01",
-      "end": "2010-03-01"
-    },
-    "tags": [
-      "ActionScript",
-      "JavaScript",
-      "PHP"
-    ]
-  },
-  {
-    "type": "promotion",
-    "title": "Senior Technical Lead",
-    "employer": "Livemocha",
-    "date": {
-      "begin": "2013-03-01",
-      "end": "2013-03-01"
-    },
-    "tags": [
-      "ActionScript",
-      "JavaScript",
-      "PHP"
-    ]
-  },
-  {
-    "type": "employer_acquired",
-    "title": "Developer IV",
-    "employer": [
-      "Livemocha",
-      "RosettaStone"
-    ],
-    "date": {
-      "begin": "2013-04-01",
-      "end": "2013-04-01"
-    },
-    "tags": [
-      "ActionScript",
-      "JavaScript",
-      "PHP",
-      "AngularJS"
-    ],
-    "location": {
-      "city": "Seattle",
-      "region": "WA",
-      "country": "USA"
-    }
-  },
-  {
-    "type": "employer_split",
-    "title": "Expert Software Engineer",
-    "employer": [
-      "Hewlett Packard",
-      "Hewlett Packard Enterprise"
-    ],
-    "date": {
-      "begin": "2015-11-01",
-      "end": "2015-11-01"
-    },
-    "tags": [
-      "JavaScript",
-      "AngularJS",
-      "Python",
-      "OpenStack"
-    ],
-    "location": {
-      "city": "Seattle",
-      "region": "WA",
-      "country": "USA"
-    }
-  },
-  {
-    "type": "employer_join",
-    "employer": "Hewlett Packard",
-    "title": "Expert Software Engineer",
-    "date": {
-      "begin": "2013-12-15",
-      "end": "2013-12-15"
-    },
-    "description": "I work on OpenStack, acting as the unofficial cross-project advocate for all things JavaScript in OpenStack. With so many engineers focused on improving our user interfaces, it falls to me to build and maintain the library and services foundation which supports them. In my day to day work I define technical policy, make tooling choices for the community, write technical specifications, and perform no small amount of mediation work to ensure my colleagues have what they need to be productive.",
-    "tags": [
-      "Project Estimation and Management",
-      "JavaScript",
-      "Python",
-      "Ansible",
-      "Puppet",
-      "npm",
-      "OpenStack",
-      "MySQL",
-      "RabbitMQ",
-      "AngularJS",
-      "Bootstrap",
-      "SASS",
-      "CSS"
-    ],
-    "location": {
-      "city": "Seattle",
-      "region": "WA",
-      "country": "USA"
-    }
-  },
-  {
-    "type": "employer_join",
-    "employer": "Livemocha",
-    "title": "Senior Software Engineer",
-    "date": {
-      "begin": "2010-11-01",
-      "end": "2010-11-01"
-    },
-    "description": "I design, build, and analyze technology platforms on which education can be democratized and community driven. It's not just about the technology, the client applications, or the services implementation - those are all just pieces that fit into a much larger vision: Education needs to be accessible to anyone, everyone, for free, and needs to be as effective as possible. To accomplish this, I mix a variety of disciplines: The design rigor that only comes from being a seasoned software engineer, the business analytics experience from my management background, my strong ethical code from OSS and an academic family, and the creative background from my BArch that allows me to not only design an integrated system, but imagine how it can grow.",
-    "tags": [
-      "Project Management",
-      "Project Estimation and Planning",
-      "Agile Development Process",
-      "JavaScript",
-      "SproutCore",
       "Java",
-      "CouchDB",
-      "MySQL",
-      "PHP",
-      "ActionScript"
-    ],
-    "location": {
-      "city": "Seattle",
-      "region": "WA",
-      "country": "USA"
-    }
-  },
-  {
-    "type": "employer_join",
-    "employer": "The Active Network",
-    "title": "Senior Flex Engineer",
-    "date": {
-      "begin": "2009-11-01",
-      "end": "2009-11-01"
-    },
-    "description": "I lead a multinational team of chinese and american software engineers in building an administration portal for summer camps.",
-    "tags": [
-      "Team Management",
-      "Project Estimation and Planning",
-      "JavaScript",
-      "ActionScript",
-      "MySQL",
-      "Java"
-    ],
-    "location": {
-      "city": "Bothell",
-      "region": "WA",
-      "country": "USA"
-    }
-  },
-  {
-    "type": "employer_join",
-    "employer": "Resource Interactive",
-    "title": "Senior Flex Developer",
-    "date": {
-      "begin": "2007-07-01",
-      "end": "2007-07-01"
-    },
-    "description": "Software engineer on the Flex 3/Flex 4.5 platform, building software applications for clients such as WalMart, HP, Limited Brands, and Home Depot.",
-    "tags": [
-      "ActionScript",
-      "JavaScript",
-      "C# .Net"
-    ],
-    "location": {
-      "city": "Columbus",
-      "region": "OH",
-      "country": "USA"
-    }
-  },
-  {
-    "type": "employer_join",
-    "employer": "Elliance",
-    "title": "New Media Developer",
-    "date": {
-      "begin": "2005-08-01",
-      "end": "2005-08-01"
-    },
-    "description": "Full spectrum website development, mostly via PHP, Flash, and Javascript.",
-    "tags": [
-      "ActionScript",
-      "JavaScript",
-      "PHP"
-    ],
-    "location": {
-      "city": "Pittsburgh",
-      "region": "PA",
-      "country": "USA"
-    }
-  },
-  {
-    "type": "employer_join",
-    "employer": "The Abreon Group",
-    "title": "Consultant",
-    "date": {
-      "begin": "2005-08-01",
-      "end": "2005-08-01"
-    },
-    "description": "I built several healthcare e-learning courses which interface with a SCORM-compliant backend.",
-    "tags": [
-      "ActionScript",
-      "JavaScript",
-      "PHP"
-    ],
-    "location": {
-      "city": "Pittsburgh",
-      "region": "PA",
-      "country": "USA"
-    }
-  },
-  {
-    "type": "employer_join",
-    "employer": "TechRx",
-    "title": "E-Learning Developer",
-    "date": {
-      "begin": "2001-05-01",
-      "end": "2001-05-01"
-    },
-    "description": "Lead developer of SCORM-compliant e-learning for a pharmacy automation system.",
-    "tags": [
-      "ActionScript",
-      "JavaScript",
-      "PHP"
-    ],
-    "location": {
-      "city": "Pittsburgh",
-      "region": "PA",
-      "country": "USA"
-    }
+      "Team Leadership",
+      "Scrum"
+    ]
   },
   {
     "type": "project",
@@ -299,9 +87,6 @@
       "end": "2015-07-03"
     },
     "title": "eslint-config-openstack",
-    "employer": [
-      "HPE"
-    ],
     "tags": [
       "JavaScript",
       "npm",
@@ -314,8 +99,8 @@
   {
     "type": "project",
     "date": {
-      "begin": "2011-05-01",
-      "end": "2011-05-01"
+      "begin": "2012-05-01",
+      "end": "2012-05-01"
     },
     "title": "Livemocha Culture Wall",
     "employer": "Livemocha",
@@ -333,8 +118,8 @@
   {
     "type": "project",
     "date": {
-      "begin": "2011-02-01",
-      "end": "2011-02-01"
+      "begin": "2012-02-01",
+      "end": "2012-02-01"
     },
     "title": "Livemocha Language Games",
     "employer": "Livemocha",
@@ -352,8 +137,8 @@
   {
     "type": "project",
     "date": {
-      "begin": "2011-02-01",
-      "end": "2011-02-01"
+      "begin": "2012-02-01",
+      "end": "2012-02-01"
     },
     "title": "Livemocha Spoken Language Engine",
     "employer": "Livemocha",
@@ -371,8 +156,8 @@
   {
     "type": "project",
     "date": {
-      "begin": "2011-11-15",
-      "end": "2011-11-15"
+      "begin": "2011-12-15",
+      "end": "2011-12-15"
     },
     "title": "Livemocha Pivot",
     "employer": "Livemocha",
@@ -393,9 +178,6 @@
       "end": "2016-02-05"
     },
     "title": "Wheel Mirrors For OpenStack Infra",
-    "employer": [
-      "HPE"
-    ],
     "tags": [
       "Python",
       "Puppet",
@@ -435,7 +217,7 @@
       "Node.js",
       "OpenStack"
     ],
-    "description": "A project creation and maintenance utility, to ensure consistent project structure across OpenStack's JavaScript projects."
+    "description": "A project creation and maintenance utility, to ensure consistent structure across OpenStack's JavaScript projects."
   },
   {
     "type": "project",
@@ -492,7 +274,7 @@
       "Linux",
       "Debian"
     ],
-    "description": "Replaced all python mirrors in OpenStack's infrastructure with AFS-driven mirrors that can artifacts for multiple languages and systems."
+    "description": "Replaced all python mirrors in OpenStack's infrastructure with AFS-driven mirrors that can host artifacts for multiple languages and systems."
   },
   {
     "type": "presentation",
@@ -535,5 +317,432 @@
       "Public Speaking"
     ],
     "title": "Modern JavaScript in OpenStack"
+  },
+  {
+    "type": "project",
+    "title": "OpenStack StoryBoard",
+    "description": "A federated task tracker for OpenStack.",
+    "date": {
+      "begin": "2013-12-15",
+      "end": "2015-05-30"
+    },
+    "location": {
+      "city": "Seattle",
+      "region": "WA",
+      "country": "USA"
+    },
+    "tags": [
+      "Python",
+      "JavaScript",
+      "Bower",
+      "npm",
+      "OpenStack",
+      "Project Management",
+      "Task Tracking"
+    ],
+    "employer": "Hewlett Packard"
+  },
+  {
+    "type": "project",
+    "title": "Node4 LTS in OpenStack Infra",
+    "description": "Upgrade OpenStack's infrastructure to Node4 LTS and associated npm, first via ppm, second via adoption of Xenial LTS build nodes.",
+    "date": {
+      "begin": "2016-04-04",
+      "end": "2016-04-07"
+    },
+    "location": {
+      "city": "Seattle",
+      "region": "WA",
+      "country": "USA"
+    },
+    "tags": [
+      "Jenkins-Job-Builder",
+      "Puppet",
+      "JavaScript",
+      "npm",
+      "OpenStack"
+    ],
+    "employer": "Hewlett Packard"
+  },
+  {
+    "type": "project",
+    "date": {
+      "begin": "2016-03-10",
+      "end": "2016-03-11"
+    },
+    "title": "afs-blob-store",
+    "tags": [
+      "JavaScript",
+      "Jasmine",
+      "Istanbul",
+      "Gulp",
+      "npm",
+      "Node.js",
+      "OpenStack"
+    ],
+    "description": "An implementation of fs-blob-store, which sorts files into alphabetical folders to accomodate AFS practical folder size limits."
+  },
+  {
+    "type": "job_change",
+    "reason": "separation",
+    "title": "Expert Software Engineer",
+    "employer": "Hewlett Packard Enterprise",
+    "date": {
+      "begin": "2015-11-01",
+      "end": "current"
+    },
+    "tags": [
+      "JavaScript",
+      "AngularJS",
+      "Python",
+      "OpenStack"
+    ],
+    "location": {
+      "city": "Seattle",
+      "region": "WA",
+      "country": "USA"
+    }
+  },
+  {
+    "type": "job_change",
+    "reason": "hired",
+    "employer": "Hewlett Packard",
+    "title": "Expert Software Engineer",
+    "date": {
+      "begin": "2013-12-15",
+      "end": "2015-10-31"
+    },
+    "description": "I work on OpenStack, acting as the unofficial cross-project advocate for all things JavaScript in OpenStack. With so many engineers focused on improving our user interfaces, it falls to me to build and maintain the library and services foundation which supports them. In my day to day work I define technical policy, make tooling choices for the community, write technical specifications, and perform no small amount of mediation work to ensure my colleagues have what they need to be productive.",
+    "tags": [
+      "Project Estimation and Management",
+      "JavaScript",
+      "Python",
+      "Ansible",
+      "Puppet",
+      "npm",
+      "OpenStack",
+      "MySQL",
+      "RabbitMQ",
+      "AngularJS",
+      "Bootstrap",
+      "SASS",
+      "CSS"
+    ],
+    "location": {
+      "city": "Seattle",
+      "region": "WA",
+      "country": "USA"
+    }
+  },
+  {
+    "type": "job_change",
+    "reason": "acquisition",
+    "title": "Developer IV",
+    "employer": "RosettaStone",
+    "date": {
+      "begin": "2013-04-01",
+      "end": "2013-12-14"
+    },
+    "tags": [
+      "ActionScript",
+      "JavaScript",
+      "PHP",
+      "AngularJS"
+    ],
+    "location": {
+      "city": "Seattle",
+      "region": "WA",
+      "country": "USA"
+    }
+  },
+  {
+    "type": "job_change",
+    "reason": "promotion",
+    "title": "Senior Technical Lead",
+    "employer": "Livemocha",
+    "date": {
+      "begin": "2013-02-11",
+      "end": "2013-03-31"
+    },
+    "tags": [
+      "ActionScript",
+      "JavaScript",
+      "PHP"
+    ]
+  },
+  {
+    "type": "job_change",
+    "reason": "hired",
+    "employer": "Livemocha",
+    "title": "Senior Software Engineer",
+    "date": {
+      "begin": "2010-10-15",
+      "end": "2013-02-10"
+    },
+    "description": "I design, build, and analyze technology platforms on which education can be democratized and community driven. It's not just about the technology, the client applications, or the services implementation - those are all just pieces that fit into a much larger vision: Education needs to be accessible to anyone, everyone, for free, and needs to be as effective as possible. To accomplish this, I mix a variety of disciplines: The design rigor that only comes from being a seasoned software engineer, the business analytics experience from my management background, my strong ethical code from OSS and an academic family, and the creative background from my BArch that allows me to not only design an integrated system, but imagine how it can grow.",
+    "tags": [
+      "Project Management",
+      "Project Estimation and Planning",
+      "Agile Development Process",
+      "JavaScript",
+      "SproutCore",
+      "Java",
+      "CouchDB",
+      "MySQL",
+      "PHP",
+      "ActionScript"
+    ],
+    "location": {
+      "city": "Seattle",
+      "region": "WA",
+      "country": "USA"
+    }
+  },
+  {
+    "type": "job_change",
+    "reason": "promotion",
+    "title": "Development Team Lead, Camps",
+    "employer": "The Active Network",
+    "date": {
+      "begin": "2011-01-01",
+      "end": "2011-10-14"
+    },
+    "tags": [
+      "ActionScript",
+      "JavaScript",
+      "PHP"
+    ]
+  },
+  {
+    "type": "job_change",
+    "reason": "hired",
+    "employer": "The Active Network",
+    "title": "Senior Flex Engineer",
+    "date": {
+      "begin": "2010-10-15",
+      "end": "2010-12-31"
+    },
+    "description": "I lead a multinational team of chinese and american software engineers in building an administration portal for summer camps.",
+    "tags": [
+      "Team Management",
+      "Project Estimation and Planning",
+      "JavaScript",
+      "ActionScript",
+      "MySQL",
+      "Java"
+    ],
+    "location": {
+      "city": "Bothell",
+      "region": "WA",
+      "country": "USA"
+    }
+  },
+  {
+    "type": "job_change",
+    "reason": "hired",
+    "employer": "Resource Interactive",
+    "title": "Senior Flex Developer",
+    "date": {
+      "begin": "2007-07-01",
+      "end": "2010-10-14"
+    },
+    "description": "Software engineer on the Flex 3/Flex 4.5 platform, building software applications for clients such as WalMart, HP, Limited Brands, and Home Depot.",
+    "tags": [
+      "ActionScript",
+      "JavaScript",
+      "C# .Net"
+    ],
+    "location": {
+      "city": "Columbus",
+      "region": "OH",
+      "country": "USA"
+    }
+  },
+  {
+    "type": "project",
+    "date": {
+      "begin": "2007-07-01",
+      "end": "2009-02-15"
+    },
+    "title": "HP Print Studio",
+    "tags": [
+      "Adobe Flex",
+      ".Net",
+      "Cairngorm",
+      "MySQL"
+    ],
+    "description": "A client project permitting customization of text, images, and themes across a variety of boutique print projects."
+  },
+  {
+    "type": "project",
+    "date": {
+      "begin": "2010-07-16",
+      "end": "2010-10-14"
+    },
+    "title": "Sherwin Color Picker",
+    "tags": [
+      "Adobe Flex",
+      ".Net",
+      "Cairngorm",
+      "MySQL"
+    ],
+    "description": "An application which permitted applying paint colors to a variety of interior vignettes."
+  },
+  {
+    "type": "project",
+    "date": {
+      "begin": "2009-02-16",
+      "end": "2010-07-15"
+    },
+    "title": "VS Pink",
+    "tags": [
+      "JavaScript",
+      "ActionScript",
+      "Flex",
+      "MySQL",
+      "Facebook"
+    ],
+    "description": "Campaign media support for Victoria Secret PINK's social media presence."
+  },
+  {
+    "type": "job_change",
+    "reason": "hired",
+    "employer": "Elliance",
+    "title": "New Media Developer",
+    "date": {
+      "begin": "2005-08-16",
+      "end": "2007-05-15"
+    },
+    "description": "Full spectrum website development, mostly via PHP, Flash, and Javascript.",
+    "tags": [
+      "ActionScript",
+      "JavaScript",
+      "PHP"
+    ],
+    "location": {
+      "city": "Pittsburgh",
+      "region": "PA",
+      "country": "USA"
+    }
+  },
+  {
+    "type": "project",
+    "date": {
+      "begin": "2005-08-16",
+      "end": "2007-05-14"
+    },
+    "title": "Marketing Media Support",
+    "tags": [
+      "JavaScript",
+      "Flash",
+      "ActionScript",
+      "PHP"
+    ],
+    "description": "Work on a variety of media properties supporting businesses in Pittsburgh, PA."
+  },
+  {
+    "type": "job_change",
+    "reason": "hired",
+    "employer": "The Abreon Group",
+    "title": "Consultant",
+    "date": {
+      "begin": "2005-05-01",
+      "end": "2005-08-15"
+    },
+    "description": "I built several healthcare e-learning courses which interface with a SCORM-compliant backend.",
+    "tags": [
+      "ActionScript",
+      "JavaScript",
+      "PHP"
+    ],
+    "location": {
+      "city": "Pittsburgh",
+      "region": "PA",
+      "country": "USA"
+    }
+  },
+  {
+    "type": "project",
+    "date": {
+      "begin": "2005-05-01",
+      "end": "2005-08-14"
+    },
+    "title": "Bespoke SCORM E-Learning Content",
+    "tags": [
+      "JavaScript",
+      "Flash",
+      "ActionScript",
+      "PHP",
+      "SCORM"
+    ],
+    "description": "Production of SCORM comliant E-Learning modules for a variety of clients."
+  },
+  {
+    "type": "job_change",
+    "reason": "acquisition",
+    "title": "Sr. E-Learning Developer",
+    "employer": "NDCHealth",
+    "date": {
+      "begin": "2003-05-28",
+      "end": "2005-04-30"
+    },
+    "tags": [
+      "ActionScript",
+      "JavaScript",
+      "PHP",
+      "RoboDoc"
+    ]
+  },
+  {
+    "type": "project",
+    "date": {
+      "begin": "2003-05-28",
+      "end": "2005-04-29"
+    },
+    "title": "Pharmacy Software Training Suite",
+    "tags": [
+      "JavaScript",
+      "Flash",
+      "ActionScript",
+      "PHP",
+      "SCORM"
+    ],
+    "description": "A suite of educational materials in support of a pharmacy automation software package."
+  },
+  {
+    "type": "project",
+    "date": {
+      "begin": "2013-02-11",
+      "end": "2013-03-31"
+    },
+    "title": "LiveMocha Learner Statistics Dashboard",
+    "tags": [
+      "JavaScript",
+      "Ember.js",
+      "Grunt",
+      "CouchDB",
+      "npm",
+      "Node.js",
+      "Map/Reduce"
+    ],
+    "description": "Realtime statistical dashboard for Livemocha Learner Activity."
+  },
+  {
+    "type": "project",
+    "date": {
+      "begin": "2013-02-11",
+      "end": "2013-12-05"
+    },
+    "title": "English as a Second Language",
+    "tags": [
+      "JavaScript",
+      "SproutCore",
+      "Grunt",
+      "CouchDB",
+      "npm",
+      "Node.js",
+      "Map/Reduce"
+    ],
+    "description": "Rosetta-branded online courseware aimed at teaching English to corporate employees."
   }
 ]

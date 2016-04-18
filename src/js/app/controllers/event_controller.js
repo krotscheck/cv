@@ -4,7 +4,8 @@ angular.module('resume').controller('EventController',
 
     var ctrl = this;
 
-    var eventPromise = Event.query().$promise;
+    var timelinePromise = Event.query(['job_change', 'project']).$promise;
+    ctrl.education = Event.query(['education']);
 
     /**
      * Helper method, lowercases the string.
@@ -30,7 +31,7 @@ angular.module('resume').controller('EventController',
       // Lowercase the search parameters.
       var lcFilters = searchParams.map(mapToLower);
 
-      eventPromise.then(function(events) {
+      timelinePromise.then(function(events) {
         // If the search params are empty, update nothing.
         if (searchParams.length === 0) {
           return;

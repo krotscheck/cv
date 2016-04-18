@@ -1,5 +1,5 @@
 angular.module('resume').controller('RootController',
-  function($scope, Header, Skill, $stateParams) {
+  function($scope, User, Skill, $stateParams) {
     'use strict';
 
     var ctrl = this;
@@ -12,8 +12,8 @@ angular.module('resume').controller('RootController',
     ctrl.displayState = 'init';
     ctrl.annotatedSearchTags = [];
 
-    var header = Header.get();
-    header.$promise.then(function(value) {
+    var user = User.get();
+    user.$promise.then(function(value) {
       ctrl.name = value.name;
       ctrl.contact = value.contact;
       ctrl.address = value.address;

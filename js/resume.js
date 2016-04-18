@@ -25,12 +25,12 @@ angular.module('resume')
   });
 
 angular.module('resume').controller('AboutController',
-  function($scope, Header) {
+  function($scope, User) {
     'use strict';
 
     var ctrl = this;
 
-    var headerPromise = Header.get().$promise;
+    var userPromise = User.get().$promise;
 
     /**
      * Choose the most appropriate about text from the provided map.
@@ -42,7 +42,7 @@ angular.module('resume').controller('AboutController',
     ctrl.render = function(evt, searchParams) {
       var showEverything = searchParams.indexOf('Everything') > -1;
 
-      headerPromise.then(function(header) {
+      userPromise.then(function(header) {
         // If the search params are empty, update nothing.
         if (searchParams.length === 0) {
           return;
@@ -69,7 +69,8 @@ angular.module('resume').controller('EventController',
 
     var ctrl = this;
 
-    var eventPromise = Event.query().$promise;
+    var timelinePromise = Event.query(['job_change', 'project']).$promise;
+    ctrl.education = Event.query(['education']);
 
     /**
      * Helper method, lowercases the string.
@@ -95,7 +96,7 @@ angular.module('resume').controller('EventController',
       // Lowercase the search parameters.
       var lcFilters = searchParams.map(mapToLower);
 
-      eventPromise.then(function(events) {
+      timelinePromise.then(function(events) {
         // If the search params are empty, update nothing.
         if (searchParams.length === 0) {
           return;
@@ -125,20 +126,8 @@ angular.module('resume').controller('EventController',
     $scope.$on('$destroy', $scope.$on('invalidate', ctrl.render));
   });
 
-angular.module('resume').controller('ResumeController',
-  function($scope, Event) {
-    'use strict';
-
-    $scope.education = Event.query("education");
-    $scope.jobs = Event.query("job");
-    $scope.presentations = Event.query("presentation");
-    $scope.projects = Event.query("project");
-    $scope.hobbies = Event.query("hobby");
-    $scope.awards = Event.query("award");
-  });
-
 angular.module('resume').controller('RootController',
-  function($scope, Header, Skill, $stateParams) {
+  function($scope, User, Skill, $stateParams) {
     'use strict';
 
     var ctrl = this;
@@ -151,8 +140,8 @@ angular.module('resume').controller('RootController',
     ctrl.displayState = 'init';
     ctrl.annotatedSearchTags = [];
 
-    var header = Header.get();
-    header.$promise.then(function(value) {
+    var user = User.get();
+    user.$promise.then(function(value) {
       ctrl.name = value.name;
       ctrl.contact = value.contact;
       ctrl.address = value.address;
@@ -196,82 +185,6 @@ angular.module('resume').controller('RootController',
 
     ctrl.invalidate();
   });
-
-angular.module('resume').controller('SkillsController',
-  function ($scope, Header) {
-    'use strict';
-
-    var ctrl = this;
-
-    var headerPromise = Header.get().$promise;
-
-    /**
-     * Choose the most appropriate about text from the provided map.
-     *
-     * @param {Event} evt An event, not used.
-     * @param {{}} searchParams The passed search parameters.
-     * @returns {void}
-     */
-    ctrl.render = function (evt, searchParams) {
-      headerPromise.then(function (header) {
-        // If the search params are empty, update nothing.
-        if (searchParams.length === 0) {
-          return;
-        }
-
-        var about = header.about.default || {priority: 100000, text: null};
-        angular.forEach(searchParams, function (tag) {
-          if (header.about.hasOwnProperty(tag) &&
-            header.about[tag].priority < about.priority) {
-            about = header.about[tag];
-          }
-        });
-        ctrl.text = about.text;
-      });
-    };
-
-    $scope.$on('$destroy', $scope.$on('invalidate', ctrl.render));
-
-  });
-
-angular.module('resume').directive('ngDelete', function () {
-  'use strict';
-
-  return function (scope, element, attrs) {
-
-    element.bind('keydown keypress', function (event) {
-      if (event.which === 8) {
-        var preventDefault = false;
-
-        scope.$apply(function () {
-          preventDefault = scope.$eval(attrs.ngDelete);
-        });
-
-        if (preventDefault) {
-          event.preventDefault();
-        }
-      }
-    });
-  };
-});
-
-
-angular.module('resume').directive('ngEnter', function () {
-  'use strict';
-
-  return function (scope, element, attrs) {
-
-    element.bind('keydown keypress', function (event) {
-      if (event.which === 13) {
-        scope.$apply(function () {
-          scope.$eval(attrs.ngEnter);
-        });
-
-        event.preventDefault();
-      }
-    });
-  };
-});
 
 angular.module('resume').directive('tagSearch',
   function ($rootScope, $timeout) {
@@ -490,6 +403,45 @@ angular.module('resume').directive('tagSearch',
     };
   });
 
+angular.module('resume').directive('ngDelete', function () {
+  'use strict';
+
+  return function (scope, element, attrs) {
+
+    element.bind('keydown keypress', function (event) {
+      if (event.which === 8) {
+        var preventDefault = false;
+
+        scope.$apply(function () {
+          preventDefault = scope.$eval(attrs.ngDelete);
+        });
+
+        if (preventDefault) {
+          event.preventDefault();
+        }
+      }
+    });
+  };
+});
+
+
+angular.module('resume').directive('ngEnter', function () {
+  'use strict';
+
+  return function (scope, element, attrs) {
+
+    element.bind('keydown keypress', function (event) {
+      if (event.which === 13) {
+        scope.$apply(function () {
+          scope.$eval(attrs.ngEnter);
+        });
+
+        event.preventDefault();
+      }
+    });
+  };
+});
+
 angular.module('resume').service('Event',
   function($http, $q) {
     'use strict';
@@ -516,7 +468,11 @@ angular.module('resume').service('Event',
                 event.date.begin = new Date(event.date.begin);
               }
               if (event.date.hasOwnProperty('end')) {
-                event.date.end = new Date(event.date.end);
+                if (event.date.end === 'current') {
+                  event.date.end = new Date();
+                } else {
+                  event.date.end = new Date(event.date.end);
+                }
               }
             }
           }
@@ -530,7 +486,7 @@ angular.module('resume').service('Event',
     }
 
     return {
-      query: function(type) {
+      query: function(types) {
         var deferred = $q.defer();
         var events = [];
         events.$promise = deferred.promise;
@@ -549,8 +505,8 @@ angular.module('resume').service('Event',
           // Postprocessing filters.
           results = results.filter(function(element) {
             var typeMatches = true;
-            if (type) {
-              typeMatches = element.type === type;
+            if (types) {
+              typeMatches = types.indexOf(element.type) > -1;
             }
 
             var tagsMatch = true;
@@ -561,7 +517,7 @@ angular.module('resume').service('Event',
           results.sort(function(a, b) {
             var aDate = a.date.end || a.date;
             var bDate = b.date.end || b.date;
-            if (aDate == bDate) {
+            if (aDate === bDate) {
               return 0;
             }
             return aDate > bDate ? -1 : 1;
@@ -577,18 +533,18 @@ angular.module('resume').service('Event',
     };
   });
 
-angular.module('resume').service('Header',
+angular.module('resume').service('User',
   function ($http, $q) {
     'use strict';
 
     var deferred;
 
-    function getHeader () {
+    function getUser () {
       if (!deferred) {
         deferred = $q.defer();
         $http({
           method: 'GET',
-          url: './data/header.json'
+          url: './data/user.json'
         }).then(function (response) {
           // Extract the data.
           deferred.resolve(response.data);
@@ -601,17 +557,17 @@ angular.module('resume').service('Header',
 
     return {
       get: function () {
-        var header = {};
-        header.$promise = getHeader();
-        header.$resolved = false;
-        header.$promise.then(function (result) {
-          angular.copy(result, header);
-          header.$resolved = true;
+        var user = {};
+        user.$promise = getUser();
+        user.$resolved = false;
+        user.$promise.then(function (result) {
+          angular.copy(result, user);
+          user.$resolved = true;
         }, function () {
-          header.$resolved = true;
+          user.$resolved = true;
         });
 
-        return header;
+        return user;
       }
     };
   });

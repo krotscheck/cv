@@ -1,7 +1,8 @@
 <div class="intro {{root.displayState}}">
   <h2>{{root.name}}</h2>
 
-  <div tag-search="root.validTags"
+  <div class="display-screen"
+       tag-search="root.validTags"
        ng-model="root.searchTags"
        ng-change="root.invalidate()"
        placeholder="'This is my Resumé. What are you looking for?'">
@@ -9,7 +10,6 @@
   <button class="feeling-lucky display-screen"
           ng-click="root.everything()">Show me everything
   </button>
-
 
   <div class="contact-icons display-screen">
     <a ng-repeat="(key, value) in root.contact"
@@ -20,7 +20,7 @@
     </a>
   </div>
   <ul class="contact-text display-print">
-    <li ng-repeat="(key, value) in root.contact">
+    <li ng-repeat="(key, value) in root.contact" class="{{key}}">
       {{value}}
     </li>
   </ul>
@@ -32,8 +32,8 @@
          ng-controller="AboutController as about"
          ng-init="about.render(null, root.annotatedSearchTags)">
       <div class="row" ng-if="about.text">
-        <h3 class="two columns">About</h3>
-        <div class="ten columns">{{about.text}}</div>
+        <h3 class="twelve columns">About</h3>
+        <div class="twelve columns">{{about.text}}</div>
       </div>
     </div>
 
@@ -41,9 +41,16 @@
          ng-controller="EventController as eventCtrl"
          ng-init="eventCtrl.render(null, root.annotatedSearchTags)">
       <div class="row" ng-repeat="event in eventCtrl.events">
-        <h3 class="two columns" ng-if="$index == 0">Timeline</h3>
-        <div class="two columns" ng-if="$index > 0">&nbsp;</div>
-        <div class="ten columns event event-{{event.type}}"
+        <h3 ng-if="$index == 0">Timeline</h3>
+        <div class=" event event-{{event.type}}"
+             ng-include="'view/timeline/' + event.type + '.html'">
+        </div>
+      </div>
+      <br/>
+
+      <div class="row" ng-repeat="event in eventCtrl.education">
+        <h3 ng-if="$index == 0">Education</h3>
+        <div class=" event event-{{event.type}}"
              ng-include="'view/timeline/' + event.type + '.html'">
         </div>
       </div>

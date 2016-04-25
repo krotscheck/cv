@@ -10,20 +10,6 @@ angular.module("resume", ["ui.router", "ngResource"])
       });
   });
 
-angular.module('resume')
-  .filter('contactLink', function () {
-    'use strict';
-
-    return function (input, parameters) {
-      switch (parameters.type) {
-        case 'envelope':
-          return 'mailto:' + input;
-        default:
-          return input;
-      }
-    };
-  });
-
 angular.module('resume').controller('AboutController',
   function($scope, User) {
     'use strict';
@@ -71,6 +57,7 @@ angular.module('resume').controller('EventController',
 
     var timelinePromise = Event.query(['job_change', 'project']).$promise;
     ctrl.education = Event.query(['education']);
+    ctrl.presentation = Event.query(['presentation']);
 
     /**
      * Helper method, lowercases the string.
@@ -441,6 +428,20 @@ angular.module('resume').directive('ngEnter', function () {
     });
   };
 });
+
+angular.module('resume')
+  .filter('contactLink', function () {
+    'use strict';
+
+    return function (input, parameters) {
+      switch (parameters.type) {
+        case 'envelope':
+          return 'mailto:' + input;
+        default:
+          return input;
+      }
+    };
+  });
 
 angular.module('resume').service('Event',
   function($http, $q) {

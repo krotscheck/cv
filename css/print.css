@@ -3,3 +3,12 @@
 
 * {
   -webkit-print-color-adjust: exact; }
+
+.container {
+  width: 100%; }
+
+div.intro {
+  border-bottom: none; }
+  div.intro p, div.intro h1, div.intro h2, div.intro h3, div.intro h4, div.intro h5, div.intro h6 {
+    margin-bottom: 2rem;
+    margin-top: 2rem; }

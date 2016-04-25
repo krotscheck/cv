@@ -80,6 +80,10 @@ div.intro {
       div.intro div.contact-icons a.icon.envelope {
         background-color: #AAAAAA;
         border-color: #CCCCCC; }
+      div.intro div.contact-icons a.icon.github {
+        background-color: #FFFFFF;
+        color: #000000;
+        border-color: #CCCCCC; }
       div.intro div.contact-icons a.icon.phone {
         background-color: #AAAAAA;
         border-color: #CCCCCC; }

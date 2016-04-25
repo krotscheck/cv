@@ -42,11 +42,19 @@
          ng-init="eventCtrl.render(null, root.annotatedSearchTags)">
       <div class="row" ng-repeat="event in eventCtrl.events">
         <h3 ng-if="$index == 0">Timeline</h3>
+        <div class="event event-{{event.type}}"
+             ng-include="'view/timeline/' + event.type + '.html'"
+             ng-if="event.date.end.getFullYear() > 2011 || event.type == 'job_change'">
+        </div>
+      </div>
+      <br/>
+
+      <div class="row" ng-repeat="event in eventCtrl.presentation">
+        <h3 ng-if="$index == 0">Presentations</h3>
         <div class=" event event-{{event.type}}"
              ng-include="'view/timeline/' + event.type + '.html'">
         </div>
       </div>
-      <br/>
 
       <div class="row" ng-repeat="event in eventCtrl.education">
         <h3 ng-if="$index == 0">Education</h3>

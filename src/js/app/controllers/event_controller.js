@@ -6,6 +6,7 @@ angular.module('resume').controller('EventController',
 
     var timelinePromise = Event.query(['job_change', 'project']).$promise;
     ctrl.education = Event.query(['education']);
+    ctrl.presentation = Event.query(['presentation']);
 
     /**
      * Helper method, lowercases the string.

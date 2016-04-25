@@ -6,15 +6,16 @@
     "envelope": "krotscheck@gmail.com",
     "wordpress": "https://krotscheck.net",
     "twitter": "http://twitter.com/krotscheck",
-    "linkedin": "https://www.linkedin.com/in/krotscheck"
+    "linkedin": "https://www.linkedin.com/in/krotscheck",
+    "github": "https://github.com/krotscheck"
   },
   "about": {
     "default": {
-      "text": "I am the recognized cross-project advocate for all things UI development in OpenStack. With hundreds of engineers contributing to our user interfaces, I ensure that we adhere to common, sane UI development standards, and that our tooling remains relevant, consistent, secure, and performant in today's rapidly evolving landscape.",
+      "text": "I am the cross-project advocate for all things UI development in OpenStack. With hundreds of engineers contributing to our user interfaces, I ensure that we adhere to common, sane UI development standards, and that our tooling remains relevant, consistent, secure, and performant in today's rapidly evolving landscape.",
       "priority": 10
     },
     "OpenStack": {
-      "text": "I am the recognized cross-project advocate for all things UI development in OpenStack. With hundreds of engineers contributing to our user interfaces, I ensure that we adhere to common, sane UI development standards, and that our tooling remains relevant, consistent, secure, and performant in today's rapidly evolving landscape.",
+      "text": "I am the cross-project advocate for all things UI development in OpenStack. With hundreds of engineers contributing to our user interfaces, I ensure that we adhere to common, sane UI development standards, and that our tooling remains relevant, consistent, secure, and performant in today's rapidly evolving landscape.",
       "priority": 5
     }
   }

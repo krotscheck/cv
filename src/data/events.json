@@ -2,7 +2,8 @@
   {
     "type": "project",
     "title": "NPM Mirror",
-    "description": "A full mirror of the NPM repository, on top of OpenStack's AFS mirrors.",
+    "url": "http://mirror.dfw.rax.openstack.org/npm/",
+    "description": "A full mirror of the NPM repository, on top of OpenStack's AFS mirrors. The full impact of this change has not yet been measured.",
     "date": {
       "begin": "2016-04-10",
       "end": "current"
@@ -87,6 +88,7 @@
       "end": "2015-07-03"
     },
     "title": "eslint-config-openstack",
+    "url": "http://git.openstack.org/cgit/openstack/eslint-config-openstack",
     "tags": [
       "JavaScript",
       "npm",
@@ -104,6 +106,7 @@
     },
     "title": "Livemocha Culture Wall",
     "employer": "Livemocha",
+    "url": "http://livemocha.com/",
     "tags": [
       "JavaScript",
       "PHP",
@@ -122,6 +125,7 @@
       "end": "2012-02-01"
     },
     "title": "Livemocha Language Games",
+    "url": "http://livemocha.com/",
     "employer": "Livemocha",
     "tags": [
       "ActionScript",
@@ -141,6 +145,7 @@
       "end": "2012-02-01"
     },
     "title": "Livemocha Spoken Language Engine",
+    "url": "http://livemocha.com/",
     "employer": "Livemocha",
     "tags": [
       "ActionScript",
@@ -156,10 +161,11 @@
   {
     "type": "project",
     "date": {
-      "begin": "2011-12-15",
-      "end": "2011-12-15"
+      "begin": "2012-12-15",
+      "end": "2013-02-10"
     },
     "title": "Livemocha Pivot",
+    "url": "http://livemocha.com/",
     "employer": "Livemocha",
     "tags": [
       "JavaScript",
@@ -178,6 +184,7 @@
       "end": "2016-02-05"
     },
     "title": "Wheel Mirrors For OpenStack Infra",
+    "url": "http://mirror.dfw.rax.openstack.org/wheel/",
     "tags": [
       "Python",
       "Puppet",
@@ -195,6 +202,7 @@
       "end": "2015-11-06"
     },
     "title": "Request Interception in ng-resource",
+    "url": "https://github.com/angular/angular.js/pull/13273",
     "tags": [
       "AngularJS",
       "JavaScript"
@@ -226,6 +234,7 @@
       "end": "2015-10-09"
     },
     "title": "OpenStack NPM Publishing",
+    "url": "http://git.openstack.org/cgit/openstack-infra/project-config/tree/jenkins/jobs/javascript.yaml",
     "tags": [
       "JavaScript",
       "Jenkins Job Builder",
@@ -258,7 +267,7 @@
       "begin": "2016-01-29",
       "end": "2016-01-29"
     },
-    "title": "Consolidated Mirrors For OpenStack Infra",
+    "title": "Unified Mirrors For OpenStack Infra",
     "tags": [
       "Python",
       "Puppet",
@@ -274,7 +283,7 @@
       "Linux",
       "Debian"
     ],
-    "description": "Replaced all python mirrors in OpenStack's infrastructure with AFS-driven mirrors that can host artifacts for multiple languages and systems."
+    "description": "Built the foundation on which other OpenStack engineers can add their own mirrors to OpenStack's Infrastructure, reducing build time, increasing stability, and reducing net disk usage."
   },
   {
     "type": "presentation",
@@ -345,7 +354,7 @@
   {
     "type": "project",
     "title": "Node4 LTS in OpenStack Infra",
-    "description": "Upgrade OpenStack's infrastructure to Node4 LTS and associated npm, first via ppm, second via adoption of Xenial LTS build nodes.",
+    "description": "Upgraded OpenStack's infrastructure to Node4 LTS and npm LTS, and defined subsequent upgrade strategy.",
     "date": {
       "begin": "2016-04-04",
       "end": "2016-04-07"
@@ -371,6 +380,7 @@
       "end": "2016-03-11"
     },
     "title": "afs-blob-store",
+    "url": "http://git.openstack.org/cgit/openstack-infra/js-afs-blob-store",
     "tags": [
       "JavaScript",
       "Jasmine",

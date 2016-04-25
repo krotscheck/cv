@@ -121,6 +121,12 @@ div.intro {
         border-color: $grey_light;
       }
 
+      &.github {
+        background-color: #FFFFFF;
+        color: #000000;
+        border-color: $grey_light;
+      }
+
       &.phone {
         background-color: #AAAAAA;
         border-color: $grey_light;
@@ -263,3 +269,4 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   left: 0px;
   color: $grey;
 }
+

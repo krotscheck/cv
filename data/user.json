@@ -1,6 +1,6 @@
 {
   "name": "Michael Krotscheck",
-  "label": "Maker",
+  "label": "Master Yak-Shaver",
   "summary": "This is a summary",
   "contact": {
     "envelope": "krotscheck@gmail.com",
@@ -11,12 +11,8 @@
   },
   "about": {
     "default": {
-      "text": "I am the cross-project advocate for all things UI development in OpenStack. With hundreds of engineers contributing to our user interfaces, I ensure that we adhere to common, sane UI development standards, and that our tooling remains relevant, consistent, secure, and performant in today's rapidly evolving landscape.",
+      "text": "I am UI Architectural lead for VMware's suite of cloud management products, including Discovery, Cost Insight, and Network Insight. It is my responsibility that all of our product teams maintain a high bar for quality, velocity, and consistency, and that common problems are solved once, the right way.",
       "priority": 10
-    },
-    "OpenStack": {
-      "text": "I am the cross-project advocate for all things UI development in OpenStack. With hundreds of engineers contributing to our user interfaces, I ensure that we adhere to common, sane UI development standards, and that our tooling remains relevant, consistent, secure, and performant in today's rapidly evolving landscape.",
-      "priority": 5
     }
   }
 }

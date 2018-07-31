@@ -1,12 +1,37 @@
 [
   {
     "type": "project",
+    "title": "VMware Symphony",
+    "url": "https://www.mgmt.cloud.vmware.com/",
+    "description": "VMware Cross-Cloud Management as a Service.",
+    "date": {
+      "begin": "2016-09-01",
+      "end": "current"
+    },
+    "location": {
+      "city": "Seattle",
+      "region": "WA",
+      "country": "USA"
+    },
+    "tags": [
+      "TypeScript",
+      "JavaScript",
+      "Angular",
+      "npm",
+      "groovy",
+      "Java",
+      "lua"
+    ],
+    "employer": "VMware"
+  },
+  {
+    "type": "project",
     "title": "NPM Mirror",
     "url": "http://mirror.dfw.rax.openstack.org/npm/",
     "description": "A full mirror of the NPM repository, on top of OpenStack's AFS mirrors. The full impact of this change has not yet been measured.",
     "date": {
       "begin": "2016-04-10",
-      "end": "current"
+      "end": "2016-08-01"
     },
     "location": {
       "city": "Seattle",
@@ -394,18 +419,20 @@
   },
   {
     "type": "job_change",
-    "reason": "separation",
-    "title": "Expert Software Engineer",
-    "employer": "Hewlett Packard Enterprise",
+    "reason": "promotion",
+    "title": "Staff Engineer II",
+    "employer": "VMware",
     "date": {
-      "begin": "2015-11-01",
+      "begin": "2018-08-01",
       "end": "current"
     },
     "tags": [
       "JavaScript",
-      "AngularJS",
-      "Python",
-      "OpenStack"
+      "TypeScript",
+      "Angular",
+      "Java",
+      "Terraform",
+      "Groovy"
     ],
     "location": {
       "city": "Seattle",
@@ -413,6 +440,49 @@
       "country": "USA"
     }
   },
+  {
+    "type": "job_change",
+    "reason": "hired",
+    "title": "Staff Engineer",
+    "employer": "VMware",
+    "date": {
+      "begin": "2016-09-01",
+      "end": "2018-07-31"
+    },
+    "tags": [
+      "JavaScript",
+      "TypeScript",
+      "Angular",
+      "Java",
+      "Terraform",
+      "Groovy"
+    ],
+    "location": {
+      "city": "Seattle",
+      "region": "WA",
+      "country": "USA"
+    }
+  },  {
+  "type": "job_change",
+  "reason": "separation",
+  "title": "Expert Software Engineer",
+  "employer": "Hewlett Packard Enterprise",
+  "date": {
+    "begin": "2015-11-01",
+    "end": "2016-09-01"
+  },
+  "tags": [
+    "JavaScript",
+    "AngularJS",
+    "Python",
+    "OpenStack"
+  ],
+  "location": {
+    "city": "Seattle",
+    "region": "WA",
+    "country": "USA"
+  }
+},
   {
     "type": "job_change",
     "reason": "hired",

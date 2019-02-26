@@ -1,16 +1,20 @@
 <div class="container">
+  <ng-container *ngIf="about$ | async as about">
+    <h3>About</h3>
+    <p class="about">{{about}}</p>
+  </ng-container>
   <ng-container *ngIf="events$ | async as events">
-    <h3>Timeline</h3>
+    <h3 *ngIf="events.length > 0">Timeline</h3>
     <cv-event-list-item *ngFor="let event of events"
                         [event]="event"></cv-event-list-item>
   </ng-container>
   <ng-container *ngIf="presentations$ | async as events">
-    <h3>Presentations</h3>
+    <h3 *ngIf="events.length > 0">Presentations</h3>
     <cv-event-list-item *ngFor="let event of events"
                         [event]="event"></cv-event-list-item>
   </ng-container>
   <ng-container *ngIf="education$ | async as events">
-    <h3>Education</h3>
+    <h3 *ngIf="events.length > 0">Education</h3>
     <cv-event-list-item *ngFor="let event of events"
                         [event]="event"></cv-event-list-item>
   </ng-container>

@@ -1,6 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
 import { combineLatest, Observable } from 'rxjs';
-import { filter, map, shareReplay } from 'rxjs/operators';
+import { map, shareReplay, tap, withLatestFrom } from 'rxjs/operators';
 import { CareerEvent } from '../model/career-event';
 import { DataService } from '../services/data.service';
 import { TagSearchService } from '../services/tag-search.service';
@@ -36,9 +36,18 @@ export class EventListComponent {
   /**
    * Constructor.
    */
+  public about$: Observable<string>;
 
-  constructor(private dataService: DataService,
-              private tagService: TagSearchService) {
+  constructor(public dataService: DataService,
+              public tagService: TagSearchService) {
+
+    this.about$ = dataService.profile$
+      .pipe(
+        map((profile) => profile.about),
+        map((about) => about[0].text),
+        withLatestFrom(tagService.selectedTags$, (about, tags) => tags.length > 0 ? about : ''),
+        tap(console.log)
+      );
 
     tagService.selectedTags$
       .pipe(

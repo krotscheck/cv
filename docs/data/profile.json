@@ -24,10 +24,10 @@
       "value": "https://github.com/krotscheck"
     }
   ],
-  "about": {
-    "default": {
-      "text": "I am UI Architectural lead for VMware's suite of cloud management products, including Discovery, Cost Insight, and Network Insight. It is my responsibility that all of our product teams maintain a high bar for quality, velocity, and consistency, and that common problems are solved once, the right way.",
+  "about": [
+    {
+      "text": "I am an Architectural lead in VMware's Cloud Management Business Unit, and spend my days unraveling tough technical topics that cross products, platforms, and businesses. I build consensus, implement RFC's, and tackle thorny multi-org issues. I am also an amazing Jungle Gym and Toddler Mattress.",
       "priority": 10
     }
-  }
+  ]
 }

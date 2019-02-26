@@ -1,5 +1,3 @@
 <cv-event-title [title]="'Presentation: ' + event.title" [date]="endDate"></cv-event-title>
-<p>
-  {{event.event}} -
-  {{event.location.city}}, {{event.location.country}}</p>
+<p>{{event.event}} - {{event.location.city}}, {{event.location.country}}</p>
 <cv-event-tags [tags]="event.tags"></cv-event-tags>

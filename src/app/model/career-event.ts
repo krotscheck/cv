@@ -12,6 +12,10 @@ export interface CareerEvent {
 
   title: string;
 
+  institution?: string;
+
+  event?: string;
+
   description: string;
 
   duration: {

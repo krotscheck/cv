@@ -1,0 +1,33 @@
+{
+  "name": "Michael Krotscheck",
+  "label": "Master Yak-Shaver",
+  "summary": "This is a summary",
+  "contact": [
+    {
+      "type": "email",
+      "value": "krotscheck@gmail.com"
+    },
+    {
+      "type": "wordpress",
+      "value": "https://krotscheck.net"
+    },
+    {
+      "type": "twitter",
+      "value": "https://twitter.com/krotscheck"
+    },
+    {
+      "type": "linkedin",
+      "value": "https://www.linkedin.com/in/krotscheck"
+    },
+    {
+      "type": "github",
+      "value": "https://github.com/krotscheck"
+    }
+  ],
+  "about": {
+    "default": {
+      "text": "I am UI Architectural lead for VMware's suite of cloud management products, including Discovery, Cost Insight, and Network Insight. It is my responsibility that all of our product teams maintain a high bar for quality, velocity, and consistency, and that common problems are solved once, the right way.",
+      "priority": 10
+    }
+  }
+}

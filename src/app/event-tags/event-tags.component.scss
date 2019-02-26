@@ -1,0 +1,14 @@
+@import "../../variables";
+:host {
+  color: $grey_light;
+  display: block;
+  font-size: 12px;
+
+  span:after {
+    content: ", ";
+  }
+
+  span:last-child::after {
+    content: "";
+  }
+}

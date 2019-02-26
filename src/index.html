@@ -1,35 +1,14 @@
-<html ng-app="resume">
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <title>Michael Krotscheck's Resumé</title>
+  <base href="/">
 
-  <script type="application/javascript"
-          src="js/lib/angular.js"></script>
-  <script type="application/javascript"
-          src="js/lib/angular-cookies.js"></script>
-  <script type="application/javascript"
-          src="js/lib/angular-resource.js"></script>
-  <script type="application/javascript"
-          src="js/lib/angular-ui-router.js"></script>
-  <script type="application/javascript"
-          src="js/resume.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-185599-12', 'auto');
-    ga('send', 'pageview');
-  </script>
-
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
-  <link rel="stylesheet" type="text/css" href="css/skeleton.css"/>
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <link rel="stylesheet" type="text/css" href="css/screen.css" media="screen"/>
-  <link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
-  <link rel="stylesheet" type="text/css" href="css/tag-search.css" media="screen"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-<div ui-view></div>
+  <cv-root></cv-root>
 </body>
 </html>

@@ -1,0 +1,27 @@
+@import "../../variables";
+
+:host {
+  background-color: #EEEEEE;
+  padding: .5rem 1rem .5rem 1rem;
+  margin-top: .5rem;
+
+  display: flex;
+  flex-direction: row;
+
+  color: $grey_light;
+
+  .title {
+    flex: 1 1 auto;
+  }
+
+  .minor {
+    text-align: right;
+  }
+}
+
+@media print {
+  :host {
+    -webkit-print-color-adjust: exact;
+    color: black;;
+  }
+}

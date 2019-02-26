@@ -1,0 +1,15 @@
+<div class="tag" *ngFor="let tag of service.selectedTags$ | async">
+  {{tag}}
+  <fa-icon [icon]="['fas', 'times']" (click)="removeTag(tag)"></fa-icon>
+</div>
+<input type="text"
+       #searchInput
+       autofocus
+       (input)="service.tagFilter$.next($event.target.value)"
+       (keydown.enter)="handleEnter()"
+       (keydown)="removeLast($event)"
+       [placeholder]="placeholder$ | async">
+<ul class="tag-search-options"
+    *ngIf="service.filteredTags$ | async as tags">
+  <li *ngFor="let tag of tags" (click)="addTag(tag.tag)">{{tag.tag}}</li>
+</ul>

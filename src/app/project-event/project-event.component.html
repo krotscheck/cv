@@ -1,0 +1,6 @@
+<cv-event-title [title]="'Project: ' + event.title" [date]="endDate"></cv-event-title>
+<p>{{event.description}}</p>
+<small>
+  <span class="skill" ng-repeat="tag in event.tags">{{tag}}</span>
+</small>
+<cv-event-tags [tags]="event.tags"></cv-event-tags>

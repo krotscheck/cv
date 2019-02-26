@@ -1,0 +1,21 @@
+<div *ngIf="profile$ | async as profile" class="profile">
+
+  <h1>{{profile.name}}</h1>
+
+  <cv-tag-search class="no-print" placeholder="This is my Resumé. What are you looking for?">
+  </cv-tag-search>
+  <button (click)="everything()"
+          *ngIf="!(hasTags$ | async)">
+    Show me everything
+  </button>
+</div>
+
+<div class="contact-icons">
+  <a *ngFor="let contact of contacts$ | async"
+     target="_blank"
+     classList="icon {{contact.type}}"
+     [href]="contact | contactLink">
+    <span class="label">{{contact.value}}</span>
+    <span class="icon"><fa-icon [icon]="contact | contactIconName"></fa-icon></span>
+  </a>
+</div>

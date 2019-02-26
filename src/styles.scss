@@ -1,0 +1,23 @@
+@import '~normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&amp;subset=latin-ext');
+@import "variables";
+
+@media print {
+  @import "assets/print.css";
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  outline: none;
+}

@@ -1,0 +1,22 @@
+@import "../../variables";
+
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  border-bottom: 1px solid $grey_lighter;
+  margin-bottom: .4rem;
+  padding-bottom: .2rem;
+
+  h4 {
+    flex: 1 1 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .date {
+    color: $grey_light;
+  }
+}

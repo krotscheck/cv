@@ -1,0 +1,69 @@
+@import "../../variables";
+
+:host {
+  flex: 1 1 auto;
+  min-height: 0px;
+  overflow-y: scroll;
+
+  align-items: center;
+  justify-content: stretch;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: padding-top 1s, padding-bottom 1s, height 1s;
+
+  @media print {
+    overflow-y: inherit;
+  }
+
+  .container {
+    transition: padding-top 1s, padding-bottom 1s, height 1s;
+    width: 100%;
+    max-width: 860px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    & > * {
+      margin-top: 1rem;
+    }
+
+    h3 {
+      border-bottom: 1px solid $grey_light;
+      font-size: 24px;
+      font-weight: 500;
+      height: 33px;
+      letter-spacing: -0.8px;
+      line-height: 32.4px;
+    }
+
+    cv-event-list-item {
+      padding-left: 2rem;
+
+      &.job_change {
+        padding-left: 0;
+        margin-top: .5rem;
+        //margin-bottom: .5rem;
+      }
+    }
+  }
+
+  &.expand {
+    height: 100%;
+
+    .container {
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+    }
+  }
+
+  &.collapse {
+    height: 0;
+
+    .container {
+      padding-top: 0em;
+      padding-bottom: 0em;
+    }
+  }
+}

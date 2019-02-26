@@ -18,6 +18,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "baseHref": "/cv/",
             "assets": [
               "src/assets",
               "src/data"
@@ -50,7 +51,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cv:build"
+            "browserTarget": "cv:build",
+            "baseHref": "/cv/"
           },
           "configurations": {
             "production": {

@@ -27,6 +27,28 @@
     },
     {
       "type": "project",
+      "title": "@vmw/csp-oauth2",
+      "description": "Reference OAuth2 implementation for VMware's Common SaaS Platform.",
+      "date": {
+        "begin": "2019-02-01",
+        "end": "2019-03-01"
+      },
+      "location": {
+        "city": "Seattle",
+        "region": "WA",
+        "country": "USA"
+      },
+      "tags": [
+        "TypeScript",
+        "JavaScript",
+        "npm",
+        "OAuth2",
+        "PKCE"
+      ],
+      "employer": "VMware"
+    },
+    {
+      "type": "project",
       "title": "Kangaroo",
       "url": "https://github.com/kangaroo-server",
       "description": "An open source, multi-tenant, OAuth2 Authorization server.",

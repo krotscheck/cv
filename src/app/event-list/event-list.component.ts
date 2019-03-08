@@ -41,12 +41,15 @@ export class EventListComponent {
   constructor(public dataService: DataService,
               public tagService: TagSearchService) {
 
-    this.about$ = dataService.profile$
+    const profileText$ = dataService.profile$
       .pipe(
         map((profile) => profile.about),
-        map((about) => about[0].text),
-        withLatestFrom(tagService.selectedTags$, (about, tags) => tags.length > 0 ? about : ''),
-        tap(console.log)
+        map((about) => about[0].text)
+      );
+
+    this.about$ = combineLatest(profileText$, tagService.selectedTags$)
+      .pipe(
+        map(([about, tags]) => tags.length > 0 ? about : '')
       );
 
     tagService.selectedTags$

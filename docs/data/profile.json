@@ -24,6 +24,13 @@
       "value": "https://github.com/krotscheck"
     }
   ],
+  "featuredSkills": [
+    "TypeScript",
+    "JavaScript",
+    "Java",
+    "CI/CD",
+    "Team Leadership"
+  ],
   "about": [
     {
       "text": "I am an Architectural lead in VMware's Cloud Management Business Unit, and spend my days unraveling tough technical topics that cross products, platforms, and businesses. I build consensus, implement RFC's, and tackle thorny multi-org issues. I am also an amazing Jungle Gym and Toddler Mattress.",

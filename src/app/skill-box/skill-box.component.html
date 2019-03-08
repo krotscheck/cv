@@ -1,0 +1,17 @@
+<div *ngFor="let skill of filteredSkills$ | async" class="skill">
+  <div class="skill-label">{{skill.name}}</div>
+  <div class="skill-bar">
+    <div class="skill-bar-duration"
+         title="{{skill.startDate | date : 'MMM `yy'}} - {{skill.endDate | date : 'MMM `yy'}}: {{durationLabel(skill)}}"
+         *ngIf="dateRange$ | async as range"
+         [ngStyle]="{ width: skill.duration / range * 100 + '%', 'margin-right': skill.lastUsed / range * 100 + '%'}">
+    </div>
+  </div>
+</div>
+<div class="skill">
+  <div class="skill-label">&nbsp;</div>
+  <div class="skill-footer">
+    <div class="skill-date">{{startDate$ | async | date : 'MMM `yy'}}</div>
+    <div class="skill-date">{{endDate$ | async | date : 'MMM `yy'}}</div>
+  </div>
+</div>

@@ -27,6 +27,11 @@ export interface Profile {
   contact: ProfileContact[];
 
   /**
+   * List of featured skills.
+   */
+  featuredSkills: string[];
+
+  /**
    * Resume header, prioritized based on search tags.
    */
   about: ProfileHeader[];

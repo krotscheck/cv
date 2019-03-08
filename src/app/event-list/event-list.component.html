@@ -2,6 +2,8 @@
   <ng-container *ngIf="about$ | async as about">
     <h3>About</h3>
     <p class="about">{{about}}</p>
+    <h3>Skills</h3>
+    <cv-skill-box></cv-skill-box>
   </ng-container>
   <ng-container *ngIf="events$ | async as events">
     <h3 *ngIf="events.length > 0">Timeline</h3>

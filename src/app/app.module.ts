@@ -23,6 +23,7 @@ import { PresentationEventComponent } from './presentation-event/presentation-ev
 import { ProjectEventComponent } from './project-event/project-event.component';
 import { TagSearchComponent } from './tag-search/tag-search.component';
 import { EventTagsComponent } from './event-tags/event-tags.component';
+import { SkillBoxComponent } from './skill-box/skill-box.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { EventTagsComponent } from './event-tags/event-tags.component';
     PresentationEventComponent,
     EducationEventComponent,
     EventTitleComponent,
-    EventTagsComponent
+    EventTagsComponent,
+    SkillBoxComponent
   ],
   imports: [
     BrowserModule,

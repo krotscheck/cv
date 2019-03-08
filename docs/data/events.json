@@ -4,7 +4,7 @@
       "type": "project",
       "title": "VMware Symphony",
       "url": "https://www.mgmt.cloud.vmware.com/",
-      "description": "VMware Cross-Cloud Management as a Service.",
+      "description": "Lead the UI teams during the SaaS transformation of VMware's most profitable business unit.",
       "date": {
         "begin": "2016-09-01",
         "end": "current"
@@ -19,8 +19,13 @@
         "JavaScript",
         "Angular",
         "npm",
+        "Team Leadership",
+        "Organizational Leadership",
+        "AWS",
+        "Docker",
         "groovy",
         "Java",
+        "OAuth2",
         "lua"
       ],
       "employer": "VMware"
@@ -64,6 +69,8 @@
       "tags": [
         "Java",
         "Jersey2",
+        "Open Source Software",
+        "Docker",
         "Hibernate",
         "Jenkins",
         "Facebook",
@@ -89,6 +96,7 @@
         "bash",
         "AFS",
         "Puppet",
+        "Open Source Software",
         "JavaScript",
         "npm",
         "OpenStack"
@@ -133,7 +141,12 @@
         "country": "USA"
       },
       "tags": [
-        "JavaScript"
+        "Building Architecture",
+        "Systems Integration",
+        "Design",
+        "Concept Development",
+        "Structures",
+        "Materials and Assembly"
       ]
     },
     {

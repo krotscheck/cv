@@ -1,0 +1,58 @@
+
+@media print {
+  :host {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+
+  .skill-label {
+    font-size: .8rem;
+    width: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .skill-bar {
+    border: 1px solid lightgrey;
+    flex: 1 0 auto;
+    height: 8px;
+    border-radius: 4px;
+    background: white;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+
+    .skill-bar-duration {
+      cursor: pointer;
+      background-color: lightgrey;
+      height: 100%;
+    }
+  }
+
+  .skill-footer {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-items: stretch;
+
+    font-size: .8em;
+    color: lightgrey;
+
+    .skill-date {
+      flex: 1 1 auto;
+      width: 50%;
+      
+      &:last-of-type {
+        text-align: right;
+      }
+    }
+  }
+}

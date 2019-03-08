@@ -1,0 +1,60 @@
+{
+  "configVersion": 1,
+  "timestamp": 1552079542808,
+  "index": "/cv/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/cv/index.html",
+        "/cv/main.4c10977e92b148f0f728.js",
+        "/cv/polyfills.fb7fa3593a34bf9b8824.js",
+        "/cv/runtime.a5dd35324ddfd942bef1.js",
+        "/cv/styles.256c2eecc1c927ac63be.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/cv/assets/print.css",
+        "/cv/data/events.json",
+        "/cv/data/profile.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/cv/assets/print.css": "172f4708ac981ff7b854274ea49eb10021f4611c",
+    "/cv/data/events.json": "27f813cca1782be70a73ee93d48a60cb28aa9b47",
+    "/cv/data/profile.json": "c3d005e91de7ce97ccf9b05d6800276ecb28abaf",
+    "/cv/index.html": "ce2e932b2a2c6394e96bb6908e60328833b75efa",
+    "/cv/main.4c10977e92b148f0f728.js": "d8d6ab76d297d7501b4c337409347bc03b5eefe0",
+    "/cv/polyfills.fb7fa3593a34bf9b8824.js": "4f7d0f63b906aa376eb9c7bc6f0abfae545593a0",
+    "/cv/runtime.a5dd35324ddfd942bef1.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/cv/styles.256c2eecc1c927ac63be.css": "abb1bddc1e5cc649f987ea7e21d006db296a876a"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

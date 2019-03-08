@@ -24,6 +24,8 @@ import { ProjectEventComponent } from './project-event/project-event.component';
 import { TagSearchComponent } from './tag-search/tag-search.component';
 import { EventTagsComponent } from './event-tags/event-tags.component';
 import { SkillBoxComponent } from './skill-box/skill-box.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,8 @@ import { SkillBoxComponent } from './skill-box/skill-box.component';
       path: '',
       component: EventListComponent
     }]),
-    FontAwesomeModule
+    FontAwesomeModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent],

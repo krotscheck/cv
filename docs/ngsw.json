@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1552079542808,
+  "timestamp": 1552079896890,
   "index": "/cv/index.html",
   "assetGroups": [
     {
@@ -31,7 +31,7 @@
   "dataGroups": [],
   "hashTable": {
     "/cv/assets/print.css": "172f4708ac981ff7b854274ea49eb10021f4611c",
-    "/cv/data/events.json": "27f813cca1782be70a73ee93d48a60cb28aa9b47",
+    "/cv/data/events.json": "b25c5dab63074ce9c347de01132a9b9815fbfcc0",
     "/cv/data/profile.json": "c3d005e91de7ce97ccf9b05d6800276ecb28abaf",
     "/cv/index.html": "ce2e932b2a2c6394e96bb6908e60328833b75efa",
     "/cv/main.4c10977e92b148f0f728.js": "d8d6ab76d297d7501b4c337409347bc03b5eefe0",

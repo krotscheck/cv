@@ -303,7 +303,7 @@
       "title": "Yeoman generator-openstack",
       "tags": [
         "JavaScript",
-        "Jasmine",
+        "jasmine",
         "Istanbul",
         "Gulp",
         "npm",
@@ -496,7 +496,7 @@
         "country": "USA"
       },
       "tags": [
-        "Jenkins-Job-Builder",
+        "Jenkins Job Builder",
         "Puppet",
         "JavaScript",
         "npm",
@@ -514,7 +514,7 @@
       "url": "http://git.openstack.org/cgit/openstack-infra/js-afs-blob-store",
       "tags": [
         "JavaScript",
-        "Jasmine",
+        "jasmine",
         "Istanbul",
         "Gulp",
         "npm",

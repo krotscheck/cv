@@ -92,7 +92,7 @@ export class SkillBoxComponent {
         shareReplay(1)
       );
 
-    this.filteredSkills$ = combineLatest(this.skills$, tags.selectedTags$, dataService.profile$)
+    this.filteredSkills$ = combineLatest([this.skills$, tags.selectedTags$, dataService.profile$])
       .pipe(
         map(([skills, selectedTags, profile]) => {
           let filteringSkills = profile.featuredSkills;
@@ -129,7 +129,7 @@ export class SkillBoxComponent {
         shareReplay(1)
       );
 
-    this.dateRange$ = combineLatest(this.startDate$, this.endDate$)
+    this.dateRange$ = combineLatest([this.startDate$, this.endDate$])
       .pipe(
         map(([start, end]) => end - start)
       );

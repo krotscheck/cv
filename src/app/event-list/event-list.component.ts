@@ -47,7 +47,7 @@ export class EventListComponent {
         map((about) => about[0].text)
       );
 
-    this.about$ = combineLatest(profileText$, tagService.selectedTags$)
+    this.about$ = combineLatest([profileText$, tagService.selectedTags$])
       .pipe(
         map(([about, tags]) => tags.length > 0 ? about : '')
       );
@@ -57,7 +57,7 @@ export class EventListComponent {
         map((value) => value.length > 0)
       ).subscribe((hasTags) => this.state = hasTags ? 'expand' : 'collapse');
 
-    const all$ = combineLatest(dataService.events$, tagService.selectedTags$)
+    const all$ = combineLatest([dataService.events$, tagService.selectedTags$])
       .pipe(
         map(([events, tags]) => {
           if (tags.length === 0) {

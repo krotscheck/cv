@@ -19,7 +19,7 @@ export class TagSearchComponent {
   /**
    * Search input.
    */
-  @ViewChild('searchInput')
+  @ViewChild('searchInput', { static: true })
   public searchInput: ElementRef;
 
   /**

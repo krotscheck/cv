@@ -35,7 +35,7 @@ export class EventListItemComponent implements OnInit, OnDestroy {
   /**
    * The event directive.
    */
-  @ViewChild(EventDirective)
+  @ViewChild(EventDirective, { static: true })
   public eventHost: EventDirective;
 
   /**

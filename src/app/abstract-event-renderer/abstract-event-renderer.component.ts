@@ -1,7 +1,8 @@
-import { HostBinding, Input } from '@angular/core';
+import { HostBinding, Input, Directive } from '@angular/core';
 import { CareerEvent } from '../model/career-event';
 import { EventRenderer } from '../model/event-renderer';
 
+@Directive()
 export abstract class AbstractEventRendererComponent implements EventRenderer {
 
   /**

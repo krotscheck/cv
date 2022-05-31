@@ -51,9 +51,9 @@ import { environment } from '../environments/environment';
     BrowserAnimationsModule,
     HttpClientModule,
     RouterModule.forRoot([{
-      path: '',
-      component: EventListComponent
-    }]),
+        path: '',
+        component: EventListComponent
+    }], { relativeLinkResolution: 'legacy' }),
     FontAwesomeModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],

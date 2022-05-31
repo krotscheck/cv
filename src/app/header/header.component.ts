@@ -27,6 +27,11 @@ export class HeaderComponent {
   public contacts$: Observable<ProfileContact[]>;
 
   /**
+   * Did we select any tags?
+   */
+  public hasNoTags$: Observable<boolean>;
+
+  /**
    * Class list.
    */
   @HostBinding('class')
@@ -41,6 +46,10 @@ export class HeaderComponent {
       .pipe(
         map((t) => t.length > 0 ? 'collapse' : 'expand')
       ).subscribe((value) => this.state = value);
+
+    this.hasNoTags$ = tags.selectedTags$.pipe(
+      map(value => !value.length)
+    );
 
     this.profile$ = data.profile$;
     this.contacts$ = data.profile$

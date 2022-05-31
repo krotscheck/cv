@@ -4,8 +4,7 @@
 
   <cv-tag-search class="no-print" placeholder="This is my Resumé. What are you looking for?">
   </cv-tag-search>
-  <button (click)="everything()"
-          *ngIf="!(hasTags$ | async)">
+  <button (click)="everything()" *ngIf="hasNoTags$ | async">
     Show me everything
   </button>
 </div>

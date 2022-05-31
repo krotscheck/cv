@@ -66,7 +66,7 @@ export class TagSearchService {
         withLatestFrom(this.selectedTags$),
         map(([filtered, selected]) => filtered.filter((tag) => selected.indexOf(tag.tag) === -1)),
         map((tags) => tags.length === 0 ? null : tags),
-        // tslint:disable-next-line:deprecation
+        // eslint-disable-next-line import/no-deprecated
         startWith(null),
         shareReplay(1)
       )

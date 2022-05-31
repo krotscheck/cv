@@ -2,6 +2,7 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map, take } from 'rxjs/operators';
 import { TagSearchService } from '../services/tag-search.service';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'cv-tag-search',
@@ -9,6 +10,8 @@ import { TagSearchService } from '../services/tag-search.service';
   styleUrls: ['./tag-search.component.scss']
 })
 export class TagSearchComponent {
+
+  public faTimes = faTimes;
 
   /**
    * Placeholder text.

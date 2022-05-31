@@ -4,9 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, faLinkedin, faTwitter, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import { AppComponent } from './app.component';
 import { EducationEventComponent } from './education-event/education-event.component';
@@ -28,46 +25,38 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HeaderComponent,
-        TagSearchComponent,
-        ContactLinkPipe,
-        ContactIconNamePipe,
-        EventListComponent,
-        EventDirective,
-        EventListItemComponent,
-        JsonEventComponent,
-        ProjectEventComponent,
-        JobChangeEventComponent,
-        PresentationEventComponent,
-        EducationEventComponent,
-        EventTitleComponent,
-        EventTagsComponent,
-        SkillBoxComponent
-    ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        HttpClientModule,
-        RouterModule.forRoot([{
-                path: '',
-                component: EventListComponent
-            }], { relativeLinkResolution: 'legacy' }),
-        FontAwesomeModule,
-        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    TagSearchComponent,
+    ContactLinkPipe,
+    ContactIconNamePipe,
+    EventListComponent,
+    EventDirective,
+    EventListItemComponent,
+    JsonEventComponent,
+    ProjectEventComponent,
+    JobChangeEventComponent,
+    PresentationEventComponent,
+    EducationEventComponent,
+    EventTitleComponent,
+    EventTagsComponent,
+    SkillBoxComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    RouterModule.forRoot([{
+      path: '',
+      component: EventListComponent
+    }], {relativeLinkResolution: 'legacy'}),
+    FontAwesomeModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production})
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 
-  constructor() {
-    library.add(faWordpress);
-    library.add(faLinkedin);
-    library.add(faTwitter);
-    library.add(faGithub);
-    library.add(faEnvelope);
-    library.add(faTimes);
-  }
 }

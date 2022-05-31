@@ -28,44 +28,37 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    TagSearchComponent,
-    ContactLinkPipe,
-    ContactIconNamePipe,
-    EventListComponent,
-    EventDirective,
-    EventListItemComponent,
-    JsonEventComponent,
-    ProjectEventComponent,
-    JobChangeEventComponent,
-    PresentationEventComponent,
-    EducationEventComponent,
-    EventTitleComponent,
-    EventTagsComponent,
-    SkillBoxComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    RouterModule.forRoot([{
-        path: '',
-        component: EventListComponent
-    }], { relativeLinkResolution: 'legacy' }),
-    FontAwesomeModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  entryComponents: [
-    ProjectEventComponent,
-    PresentationEventComponent,
-    JobChangeEventComponent,
-    EducationEventComponent,
-    JsonEventComponent
-  ]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        TagSearchComponent,
+        ContactLinkPipe,
+        ContactIconNamePipe,
+        EventListComponent,
+        EventDirective,
+        EventListItemComponent,
+        JsonEventComponent,
+        ProjectEventComponent,
+        JobChangeEventComponent,
+        PresentationEventComponent,
+        EducationEventComponent,
+        EventTitleComponent,
+        EventTagsComponent,
+        SkillBoxComponent
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        RouterModule.forRoot([{
+                path: '',
+                component: EventListComponent
+            }], { relativeLinkResolution: 'legacy' }),
+        FontAwesomeModule,
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 

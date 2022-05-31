@@ -1,23 +1,11 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import * as elasticlunr from 'elasticlunr';
 import { Observable, of, Subject } from 'rxjs';
-import {
-  distinctUntilChanged,
-  map,
-  pluck,
-  reduce,
-  shareReplay,
-  startWith,
-  switchMap,
-  take,
-  withLatestFrom
-} from 'rxjs/operators';
-import { ElasticLunrIndex } from '../elasticlunr/elasticlunr.index';
-import { ElasticLunrResult } from '../elasticlunr/elasticlunr.result';
+import { distinctUntilChanged, map, pluck, reduce, shareReplay, startWith, switchMap, take, withLatestFrom } from 'rxjs/operators';
 import { CareerEvent } from '../model/career-event';
 import { DataService } from './data.service';
+import { Index, SearchResult } from '../lunr';
 
 @Injectable({
   providedIn: 'root'
@@ -32,14 +20,13 @@ export class TagSearchService {
 
   public selectedTags$: Observable<string[]>;
 
-  private index: ElasticLunrIndex<{ tag: string }>;
+  private index: Index<{ tag: string }>;
 
   constructor(data: DataService,
               activatedRoute: ActivatedRoute,
               private router: Router) {
-    this.index = elasticlunr();
+    this.index = new Index('tag');
     this.index.addField('tag');
-    this.index.setRef('tag');
 
     this.selectedTags$ = activatedRoute.queryParams
       .pipe(
@@ -60,7 +47,7 @@ export class TagSearchService {
         shareReplay(1)
       );
 
-    this.validTags$.subscribe((tags) => tags.forEach((tag) => this.index.addDoc({ tag })));
+    this.validTags$.subscribe((tags) => tags.forEach((tag) => this.index.addDoc({tag})));
 
     this.filteredTags$ = this.tagFilter$
       .pipe(
@@ -69,9 +56,9 @@ export class TagSearchService {
             return of([]);
           }
 
-          return of(this.index.search(str, { expand: true }))
+          return of(this.index.search(str, {fields: {tag: {expand: true}}}))
             .pipe(
-              map((searchResults: ElasticLunrResult[]) => {
+              map((searchResults: SearchResult<{ tag: string }>[]) => {
                 return searchResults.map((result) => this.index.documentStore.getDoc(result.ref));
               })
             );
@@ -79,6 +66,7 @@ export class TagSearchService {
         withLatestFrom(this.selectedTags$),
         map(([filtered, selected]) => filtered.filter((tag) => selected.indexOf(tag.tag) === -1)),
         map((tags) => tags.length === 0 ? null : tags),
+        // tslint:disable-next-line:deprecation
         startWith(null),
         shareReplay(1)
       )
@@ -149,6 +137,6 @@ export class TagSearchService {
    */
   private navigateTo(tags: string[]): void {
     const tag = tags.length > 0 ? tags.join(',') : null;
-    this.router.navigate(['/'], { queryParams: { tag } });
+    this.router.navigate(['/'], {queryParams: {tag}});
   }
 }

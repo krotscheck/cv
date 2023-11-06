@@ -1,7 +1,6 @@
 {
   "name": "Michael Krotscheck",
   "label": "Master Yak-Shaver",
-  "summary": "This is a summary",
   "contact": [
     {
       "type": "email",
@@ -21,15 +20,15 @@
     }
   ],
   "featuredSkills": [
+    "golang",
+    "Java",
     "TypeScript",
     "JavaScript",
-    "Java",
-    "CI/CD",
-    "Team Leadership"
+    "OAuth2"
   ],
   "about": [
     {
-      "text": "I am an Architectural lead in VMware's Cloud Management Business Unit, and spend my days unraveling tough technical topics that cross products, platforms, and businesses. I build consensus, implement RFC's, and tackle thorny multi-org issues. I am also an amazing Jungle Gym and Toddler Mattress.",
+      "text": "I am the Identity Lead for VMware CCSP (Cross-Cloud SaaS Platform). I spend my days unraveling tough technical topics that cross products, platforms, and businesses. I build consensus, implement RFC's, and tackle thorny multi-org issues, all with a healthy dose of whimsy.",
       "priority": 10
     }
   ]

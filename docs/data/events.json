@@ -1,13 +1,251 @@
 {
   "results": [
     {
+      "title": "Sponsorship for the Internet Identity Workshop",
+      "type": "presentation",
+      "url": "https://internetidentityworkshop.com/",
+      "description": "Secured VMware's sponsorship for the Internet Identity Workshop, Fall 2022.",
+      "date": {
+        "begin": "2022-10-01",
+        "end": "2022-10-01"
+      },
+      "location": {
+        "city": "Palo Alto",
+        "region": "CA",
+        "country": "USA"
+      },
+      "tags": [
+        "Authorization",
+        "Event Sponsorship"
+      ],
+      "employer": "VMware"
+    },
+    {
+      "title": "General Authorization Service Re-platforming",
       "type": "project",
+      "url": "https://console.cloud.vmware.gov/",
+      "description": "Transition an 2010's style authorization server to a kuberentes deployment, for both commercial and government environments.",
+      "date": {
+        "begin": "2021-11-01",
+        "end": "2022-01-01"
+      },
+      "location": {
+        "city": "Bellevue",
+        "region": "WA",
+        "country": "USA"
+      },
+      "tags": [
+        "Java",
+        "Team Leadership",
+        "Project Management",
+        "AWS",
+        "DynamoDB",
+        "k8s",
+        "OAuth2",
+        "Docker"
+      ],
+      "employer": "VMware"
+    },
+    {
+      "title": "Authorization in the Sovereign Cloud",
+      "type": "project",
+      "url": "https://console.cloud.vmware.gov/",
+      "description": "Detaching a cloud-native authorization platform from AWS, enabling it to run in geographically sovereign private clouds.",
+      "date": {
+        "begin": "2023-01-01",
+        "end": "current"
+      },
+      "location": {
+        "city": "Bellevue",
+        "region": "WA",
+        "country": "USA"
+      },
+      "tags": [
+        "Java",
+        "Team Leadership",
+        "Project Management",
+        "Team Leadership",
+        "OAuth2",
+        "Postgres",
+        "AWS",
+        "k8s",
+        "Docker"
+      ],
+      "employer": "VMware"
+    },
+    {
+      "title": "Colleague PIP Rehabilitation",
+      "type": "project",
+      "url": "https://console.cloud.vmware.gov/",
+      "description": "Successfully assisted a colleague who was flagged for performance improvement.",
+      "date": {
+        "begin": "2023-01-01",
+        "end": "2023-04-01"
+      },
+      "location": {
+        "city": "Bellevue",
+        "region": "WA",
+        "country": "USA"
+      },
+      "tags": [
+        "Team Leadership",
+        "Trust Engineering"
+      ],
+      "employer": "VMware"
+    },
+    {
+      "title": "Secure State UI Architect",
+      "type": "project",
+      "url": "https://www.securestate.vmware.com/",
+      "description": "Oversaw three geographically distributee teams, provided architectural input, and managed a regular cadence of educational presentations.",
+      "date": {
+        "begin": "2019-04-01",
+        "end": "2021-10-01"
+      },
+      "location": {
+        "city": "Seattle",
+        "region": "WA",
+        "country": "USA"
+      },
+      "tags": [
+        "Team Leadership",
+        "Angular",
+        "Typescript",
+        "Organizational Leadership",
+        "Project Management",
+        "k8s",
+        "Docker"
+      ],
+      "employer": "VMware"
+    },
+    {
+      "title": "Product Project Hierarchy",
+      "type": "project",
+      "url": "https://www.securestate.vmware.com/",
+      "description": "Enabled isolation of resources in the system to projects and subprojects, as well as cross-organization access and superuser accounts in a consistent, extensible manner.",
+      "date": {
+        "begin": "2020-01-01",
+        "end": "2021-04-01"
+      },
+      "location": {
+        "city": "Bellevue",
+        "region": "WA",
+        "country": "USA"
+      },
+      "tags": [
+        "golang",
+        "OAuth2",
+        "Authorization",
+        "Project Management",
+        "Team Leadership",
+        "Open Policy Engine",
+        "k8s",
+        "Docker"
+      ],
+      "employer": "VMware"
+    },
+    {
+      "title": "Authorization Policy Service",
+      "type": "project",
+      "url": "https://www.securestate.vmware.com/",
+      "description": "A microservice that provides real time authorization decisions for each HTTP request in Secure State.",
+      "date": {
+        "begin": "2019-08-01",
+        "end": "2020-01-01"
+      },
+      "location": {
+        "city": "Seattle",
+        "region": "WA",
+        "country": "USA"
+      },
+      "tags": [
+        "golang",
+        "Team Leadership",
+        "Project Management",
+        "Open Policy Engine",
+        "k8s",
+        "Docker"
+      ],
+      "employer": "VMware"
+    },
+    {
+      "title": "Ansible Infrastructure Automation",
+      "type": "project",
+      "url": "https://www.securestate.vmware.com/",
+      "description": "Implemented and extended existing Ansible modules to bring our UI projects up to the team's IaC standards.",
+      "date": {
+        "begin": "2019-08-01",
+        "end": "2020-01-01"
+      },
+      "location": {
+        "city": "Seattle",
+        "region": "WA",
+        "country": "USA"
+      },
+      "tags": [
+        "python",
+        "Ansible",
+        "AWS"
+      ],
+      "employer": "VMware"
+    },
+    {
+      "title": "Central Data Management",
+      "type": "project",
+      "url": "https://www.securestate.vmware.com/",
+      "description": "Enabling, asserting, and auditing data consistency amongst distributed microservices.",
+      "date": {
+        "begin": "2021-06-01",
+        "end": "2021-10-01"
+      },
+      "location": {
+        "city": "Bellevue",
+        "region": "WA",
+        "country": "USA"
+      },
+      "tags": [
+        "golang",
+        "Team Leadership",
+        "AWS",
+        "Software Architecture",
+        "k8s",
+        "Docker"
+      ],
+      "employer": "VMware"
+    },
+    {
+      "title": "Secure State UI Replatform",
+      "type": "project",
+      "url": "https://www.securestate.vmware.com/",
+      "description": "Decoupled the User Interface team from the release cadence of the backend. This drastically increased MR cycle time as well as coverage and consistency metrics, while substantially reducing hosting costs.",
+      "date": {
+        "begin": "2019-04-01",
+        "end": "2019-06-01"
+      },
+      "location": {
+        "city": "Bellevue",
+        "region": "WA",
+        "country": "USA"
+      },
+      "tags": [
+        "Angular",
+        "Typescript",
+        "AWS",
+        "Node.js",
+        "Express",
+        "Team Leadership",
+        "Organizational Leadership"
+      ],
+      "employer": "VMware"
+    },
+    {
       "title": "VMware Symphony",
+      "type": "project",
       "url": "https://www.mgmt.cloud.vmware.com/",
-      "description": "Lead the UI teams during the SaaS transformation of VMware's most profitable business unit.",
+      "description": "Lead the UI teams during the SaaS transformation of VMware's most profitable business unit. Built foundational shared libraries, set quality standards and measurements for the Business Unit",
       "date": {
         "begin": "2016-09-01",
-        "end": "current"
+        "end": "2018-08-01"
       },
       "location": {
         "city": "Seattle",
@@ -31,8 +269,8 @@
       "employer": "VMware"
     },
     {
-      "type": "project",
       "title": "@vmw/csp-oauth2",
+      "type": "project",
       "description": "Reference OAuth2 implementation for VMware's Common SaaS Platform.",
       "date": {
         "begin": "2019-02-01",
@@ -53,8 +291,8 @@
       "employer": "VMware"
     },
     {
-      "type": "project",
       "title": "Kangaroo",
+      "type": "project",
       "url": "https://github.com/kangaroo-server",
       "description": "An open source, multi-tenant, OAuth2 Authorization server.",
       "date": {
@@ -79,8 +317,8 @@
       "employer": "Self"
     },
     {
-      "type": "project",
       "title": "NPM Mirror",
+      "type": "project",
       "url": "http://mirror.dfw.rax.openstack.org/npm/",
       "description": "A full mirror of the NPM repository, on top of OpenStack's AFS mirrors. The full impact of this change has not yet been measured.",
       "date": {
@@ -150,8 +388,8 @@
       ]
     },
     {
-      "type": "project",
       "title": "Camps Administrative User Interface",
+      "type": "project",
       "description": "An administrative user interface for Active.com's SummerCamp registration program.",
       "date": {
         "begin": "2010-10-14",
@@ -167,12 +405,12 @@
       ]
     },
     {
+      "title": "eslint-config-openstack",
       "type": "project",
       "date": {
         "begin": "2015-07-03",
         "end": "2015-07-03"
       },
-      "title": "eslint-config-openstack",
       "url": "http://git.openstack.org/cgit/openstack/eslint-config-openstack",
       "tags": [
         "JavaScript",
@@ -184,12 +422,12 @@
       "description": "Centralized JavaScript language linting configuration for all of OpenStack."
     },
     {
+      "title": "Livemocha Culture Wall",
       "type": "project",
       "date": {
         "begin": "2012-05-01",
         "end": "2012-05-01"
       },
-      "title": "Livemocha Culture Wall",
       "employer": "Livemocha",
       "url": "http://livemocha.com/",
       "tags": [
@@ -204,12 +442,12 @@
       "description": "A new section of livemocha.com, which allowed our community members to share photos and stories from their own cultures."
     },
     {
+      "title": "Livemocha Language Games",
       "type": "project",
       "date": {
         "begin": "2012-02-01",
         "end": "2012-02-01"
       },
-      "title": "Livemocha Language Games",
       "url": "http://livemocha.com/",
       "employer": "Livemocha",
       "tags": [
@@ -224,12 +462,12 @@
       "description": "A suite of games to encourage language learning. Vocabulary packs were available via purchased or earned currency, and members were encouraged to interact and play with their friends."
     },
     {
+      "title": "Livemocha Spoken Language Engine",
       "type": "project",
       "date": {
         "begin": "2012-02-01",
         "end": "2012-02-01"
       },
-      "title": "Livemocha Spoken Language Engine",
       "url": "http://livemocha.com/",
       "employer": "Livemocha",
       "tags": [
@@ -244,12 +482,12 @@
       "description": "Maintenance and updates on the core Livemocha experience, a social learning engine which allowed our community to grade each others' exercises, and engage in conversation with each other."
     },
     {
+      "title": "Livemocha Pivot",
       "type": "project",
       "date": {
         "begin": "2012-12-15",
-        "end": "2013-02-10"
+        "end": "2013-03-31"
       },
-      "title": "Livemocha Pivot",
       "url": "http://livemocha.com/",
       "employer": "Livemocha",
       "tags": [
@@ -263,12 +501,12 @@
       "description": "Livemocha's pivot sought to build on the engagement of its existing community, to create a custom education platform for international businesses. Two thick-client browser applications permitted the creation, sequencing, and consumption of highly customized language content."
     },
     {
+      "title": "Wheel Mirrors For OpenStack Infra",
       "type": "project",
       "date": {
         "begin": "2016-02-05",
         "end": "2016-02-05"
       },
-      "title": "Wheel Mirrors For OpenStack Infra",
       "url": "http://mirror.dfw.rax.openstack.org/wheel/",
       "tags": [
         "Python",
@@ -281,12 +519,12 @@
       "description": "A mirror of pre-built wheels for OpenStack's requirements, removing the need for test-time compilation. Devstack gate jobs are now 20 minutes faster, an effective 30% increase in OpenStack's gate capacity."
     },
     {
+      "title": "Request Interception in ng-resource",
       "type": "project",
       "date": {
         "begin": "2015-11-06",
         "end": "2015-11-06"
       },
-      "title": "Request Interception in ng-resource",
       "url": "https://github.com/angular/angular.js/pull/13273",
       "tags": [
         "AngularJS",
@@ -295,12 +533,12 @@
       "description": "Enable request and requestError interception in AngularJS's ng-resource library, permitting pre-request decoration and annotation of RESTful resource requests."
     },
     {
+      "title": "Yeoman generator-openstack",
       "type": "project",
       "date": {
         "begin": "2016-03-10",
         "end": "2016-03-10"
       },
-      "title": "Yeoman generator-openstack",
       "tags": [
         "JavaScript",
         "jasmine",
@@ -313,12 +551,12 @@
       "description": "A project creation and maintenance utility, to ensure consistent structure across OpenStack's JavaScript projects."
     },
     {
+      "title": "OpenStack NPM Publishing",
       "type": "project",
       "date": {
         "begin": "2015-10-09",
         "end": "2015-10-09"
       },
-      "title": "OpenStack NPM Publishing",
       "url": "http://git.openstack.org/cgit/openstack-infra/project-config/tree/jenkins/jobs/javascript.yaml",
       "tags": [
         "JavaScript",
@@ -330,12 +568,12 @@
       "description": "OpenStack is now able to publish packages to the Node Package Manager (npm)."
     },
     {
+      "title": "CORS Support in OpenStack",
       "type": "project",
       "date": {
         "begin": "2016-02-11",
         "end": "2016-02-11"
       },
-      "title": "CORS Support in OpenStack",
       "tags": [
         "Python",
         "OpenStack",
@@ -526,11 +764,66 @@
     {
       "type": "job_change",
       "reason": "promotion",
+      "title": "Identity Lead - Office of the CTO",
+      "employer": "VMware",
+      "date": {
+        "begin": "2021-11-01",
+        "end": "current"
+      },
+      "tags": [
+        "Java",
+        "OAuth2",
+        "Angular",
+        "Java",
+        "Spring",
+        "DynamoDB",
+        "PostgreSQL",
+        "Redis",
+        "Terraform",
+        "Jenkins",
+        "gitlab",
+        "git"
+      ],
+      "location": {
+        "city": "Bellevue",
+        "region": "WA",
+        "country": "USA"
+      }
+    },
+    {
+      "type": "job_change",
+      "reason": "promotion",
+      "title": "Customer Interface Architect - Secure State",
+      "employer": "VMware",
+      "date": {
+        "begin": "2019-04-01",
+        "end": "2021-11-01"
+      },
+      "tags": [
+        "JavaScript",
+        "TypeScript",
+        "Angular",
+        "golang",
+        "Terraform",
+        "lua",
+        "Jenkins",
+        "gitlab",
+        "git"
+      ],
+      "location": {
+        "city": "Bellevue",
+        "region": "WA",
+        "country": "USA"
+      }
+    },
+    {
+      "type": "job_change",
+      "reason": "promotion",
       "title": "Staff Engineer II",
       "employer": "VMware",
       "date": {
         "begin": "2018-08-01",
-        "end": "current"
+        "end": "2019-04-01"
       },
       "tags": [
         "JavaScript",
@@ -667,7 +960,7 @@
       "employer": "Livemocha",
       "title": "Senior Software Engineer",
       "date": {
-        "begin": "2010-10-15",
+        "begin": "2011-10-15",
         "end": "2013-02-10"
       },
       "description": "I design, build, and analyze technology platforms on which education can be democratized and community driven. It's not just about the technology, the client applications, or the services implementation - those are all just pieces that fit into a much larger vision: Education needs to be accessible to anyone, everyone, for free, and needs to be as effective as possible. To accomplish this, I mix a variety of disciplines: The design rigor that only comes from being a seasoned software engineer, the business analytics experience from my management background, my strong ethical code from OSS and an academic family, and the creative background from my BArch that allows me to not only design an integrated system, but imagine how it can grow.",
@@ -695,7 +988,7 @@
       "title": "Development Team Lead, Camps",
       "employer": "The Active Network",
       "date": {
-        "begin": "2011-01-01",
+        "begin": "2010-10-15",
         "end": "2011-10-14"
       },
       "tags": [
@@ -703,30 +996,6 @@
         "JavaScript",
         "PHP"
       ]
-    },
-    {
-      "type": "job_change",
-      "reason": "hired",
-      "employer": "The Active Network",
-      "title": "Senior Flex Engineer",
-      "date": {
-        "begin": "2010-10-15",
-        "end": "2010-12-31"
-      },
-      "description": "I lead a multinational team of chinese and american software engineers in building an administration portal for summer camps.",
-      "tags": [
-        "Team Management",
-        "Project Estimation and Planning",
-        "JavaScript",
-        "ActionScript",
-        "MySQL",
-        "Java"
-      ],
-      "location": {
-        "city": "Bothell",
-        "region": "WA",
-        "country": "USA"
-      }
     },
     {
       "type": "job_change",
@@ -748,6 +1017,64 @@
         "region": "OH",
         "country": "USA"
       }
+    },
+    {
+      "type": "job_change",
+      "reason": "hired",
+      "employer": "Elliance",
+      "title": "New Media Developer",
+      "date": {
+        "begin": "2005-08-16",
+        "end": "2007-05-15"
+      },
+      "description": "Full spectrum website development, mostly via PHP, Flash, and Javascript.",
+      "tags": [
+        "ActionScript",
+        "JavaScript",
+        "PHP"
+      ],
+      "location": {
+        "city": "Pittsburgh",
+        "region": "PA",
+        "country": "USA"
+      }
+    },
+    {
+      "type": "job_change",
+      "reason": "hired",
+      "employer": "The Abreon Group",
+      "title": "Consultant",
+      "date": {
+        "begin": "2005-05-01",
+        "end": "2005-08-15"
+      },
+      "description": "I built several healthcare e-learning courses which interface with a SCORM-compliant backend.",
+      "tags": [
+        "ActionScript",
+        "JavaScript",
+        "PHP"
+      ],
+      "location": {
+        "city": "Pittsburgh",
+        "region": "PA",
+        "country": "USA"
+      }
+    },
+    {
+      "type": "job_change",
+      "reason": "acquisition",
+      "title": "Sr. E-Learning Developer",
+      "employer": "NDCHealth",
+      "date": {
+        "begin": "2003-05-28",
+        "end": "2005-04-30"
+      },
+      "tags": [
+        "ActionScript",
+        "JavaScript",
+        "PHP",
+        "RoboDoc"
+      ]
     },
     {
       "type": "project",
@@ -796,27 +1123,6 @@
       "description": "Campaign media support for Victoria Secret PINK's social media presence."
     },
     {
-      "type": "job_change",
-      "reason": "hired",
-      "employer": "Elliance",
-      "title": "New Media Developer",
-      "date": {
-        "begin": "2005-08-16",
-        "end": "2007-05-15"
-      },
-      "description": "Full spectrum website development, mostly via PHP, Flash, and Javascript.",
-      "tags": [
-        "ActionScript",
-        "JavaScript",
-        "PHP"
-      ],
-      "location": {
-        "city": "Pittsburgh",
-        "region": "PA",
-        "country": "USA"
-      }
-    },
-    {
       "type": "project",
       "date": {
         "begin": "2005-08-16",
@@ -830,27 +1136,6 @@
         "PHP"
       ],
       "description": "Work on a variety of media properties supporting businesses in Pittsburgh, PA."
-    },
-    {
-      "type": "job_change",
-      "reason": "hired",
-      "employer": "The Abreon Group",
-      "title": "Consultant",
-      "date": {
-        "begin": "2005-05-01",
-        "end": "2005-08-15"
-      },
-      "description": "I built several healthcare e-learning courses which interface with a SCORM-compliant backend.",
-      "tags": [
-        "ActionScript",
-        "JavaScript",
-        "PHP"
-      ],
-      "location": {
-        "city": "Pittsburgh",
-        "region": "PA",
-        "country": "USA"
-      }
     },
     {
       "type": "project",
@@ -867,22 +1152,6 @@
         "SCORM"
       ],
       "description": "Production of SCORM comliant E-Learning modules for a variety of clients."
-    },
-    {
-      "type": "job_change",
-      "reason": "acquisition",
-      "title": "Sr. E-Learning Developer",
-      "employer": "NDCHealth",
-      "date": {
-        "begin": "2003-05-28",
-        "end": "2005-04-30"
-      },
-      "tags": [
-        "ActionScript",
-        "JavaScript",
-        "PHP",
-        "RoboDoc"
-      ]
     },
     {
       "type": "project",
@@ -921,8 +1190,8 @@
     {
       "type": "project",
       "date": {
-        "begin": "2013-02-11",
-        "end": "2013-12-05"
+        "begin": "2013-04-01",
+        "end": "2013-12-14"
       },
       "title": "English as a Second Language",
       "tags": [

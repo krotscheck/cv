@@ -1,7 +1,7 @@
 
-$grey_lighter: #EEEEEE;
-$grey_light: #CCCCCC;
-$grey: #AAAAAA;
+$grey_lighter: #DDDDDD;
+$grey_light: #BBBBBB;
+$grey: #999999;
 
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
   @if $inset {
